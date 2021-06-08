@@ -1,15 +1,17 @@
-using UnityEngine.UI;
 using UnityEngine;
-using UnityEngine.Events;
+using UnityEngine.UI;
 using System.Collections;
-using System;
 
 public enum DialogueMode { Click, Auto, Script }
 
+[RequireComponent(typeof(DialogueHolder))]
+[RequireComponent(typeof(DialogueIndex))]
 public class DialogueController : MonoBehaviour
 {
     [Header("Speed at which the dialogue is played at.")]
-    public float dialogueInterval;
+    public float regularInterval;
+    public float dotInterval;
+    public float commaInterval;
     public float dialoguePauseDuration;
 
     [Header("Text to display dialogue on.")]
@@ -20,9 +22,11 @@ public class DialogueController : MonoBehaviour
     public DialogueMode dialogueMode;
 
     [Header("Dialogue objects")]
-    public DialogueHolder dialogueTextHolder;
-    public DialogueIndex dialogueIndex;
+    private DialogueHolder dialogueTextHolder;
+    private DialogueIndex dialogueIndex;
 
+    [Header("Pauses dialogue")]
+    public bool isPaused;
 
     private uint currentTextIndex;
     private string finalText, currentText;
@@ -30,16 +34,47 @@ public class DialogueController : MonoBehaviour
     private uint currentCharacterIndex;
     private bool isDoneWriting, isDoneWithCharacter, isDoneWaiting, hasAborted;
 
-    public event Action<uint> OnUpdateTextIndex;
+    public event System.Action<uint> OnUpdateTextIndex;
 
-    private void NextDialogue()
+    private void Awake()
+    {
+        dialogueTextHolder = GetComponent<DialogueHolder>();
+        dialogueIndex = GetComponent<DialogueIndex>();
+    }
+
+    private void Start()
+    {
+        isDoneWriting = true;
+        isDoneWaiting = true;
+        hasAborted = false;
+    }
+
+    private void Update()
+    {
+        if (isPaused)
+            return;
+
+        CheckMode();
+
+        if (!isDoneWriting &&
+            isDoneWaiting &&
+            !hasAborted)
+            NextCharacter();
+    }
+
+    public void PauseDialogue(bool enabled)
+    {
+        isPaused = enabled;
+        ResetText();
+    }
+
+    public void NextDialogue()
     {
         ResetText();
         GetNewTextValues();
         ExecuteEventAction();
         OnUpdateTextIndex(currentTextIndex);
         SetName(talkerName);
-
 
         isDoneWriting = false;
     }
@@ -75,23 +110,6 @@ public class DialogueController : MonoBehaviour
         isDoneWithCharacter = true;
     }
 
-    private void Start()
-    {
-        isDoneWriting = true;
-        isDoneWaiting = true;
-        hasAborted = false;
-    }
-
-    private void Update()
-    {
-        CheckMode();
-
-        if (!isDoneWriting &&
-            isDoneWaiting &&
-            !hasAborted)
-            NextCharacter();
-    }
-
     private void NextCharacter()
     {
         if ((uint)finalText.Length == currentCharacterIndex)
@@ -109,12 +127,19 @@ public class DialogueController : MonoBehaviour
 
     private IEnumerator LoadNextCharacter()
     {
-        currentText += finalText[(int)currentCharacterIndex];
+        char nextCharacter = finalText[(int)currentCharacterIndex];
+        currentText += nextCharacter;
         SetText(currentText);
 
         currentCharacterIndex++;
 
-        yield return new WaitForSeconds(dialogueInterval);
+        if(nextCharacter == ',')
+            yield return new WaitForSeconds(commaInterval);
+        else if(nextCharacter == '.')
+            yield return new WaitForSeconds(dotInterval);
+        else
+            yield return new WaitForSeconds(regularInterval);
+
         isDoneWithCharacter = true;
     }
 

@@ -1,18 +1,18 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(DialogueController))]
 public class DialogueBackground : MonoBehaviour
 {
-    [Header("Background reference")]
-    public Image background;
+    public Image backgroundReference;
 
     void Start()
     {
-        FindObjectOfType<DialogueController>().OnUpdateTextIndex += ChangeBackground;
+        GetComponent<DialogueController>().OnUpdateTextIndex += ChangeBackground;
     }
 
     public void ChangeBackground(uint index)
     {
-        background.sprite = FindObjectOfType<DialogueHolder>().GetDialogueComponent(index).background;
+        backgroundReference.sprite = GetComponent<DialogueHolder>().GetDialogueComponent(index).background;
     }
 }

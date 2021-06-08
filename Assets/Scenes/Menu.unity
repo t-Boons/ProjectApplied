@@ -374,7 +374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3679245, g: 0.1475169, b: 0.1475169, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -491,7 +491,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 683469050}
-  - component: {fileID: 683469049}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -499,37 +498,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &683469049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 683469048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee6f812da5864b449bf3b094b7853d84, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-  - component:
-      talker: Jeff
-      text: You're gay lmao
-      background: {fileID: 21300000, guid: fe73355d592456d459b70ce0d204e74a, type: 3}
-    question:
-      isEnabled: 0
-      answer1: 
-      answer2: 
-      answer3: 
-  - component:
-      talker: You
-      text: No you lol
-      background: {fileID: 21300000, guid: c5bcd0178b6ddc0419c1cf98b977e0fd, type: 3}
-    question:
-      isEnabled: 0
-      answer1: 
-      answer2: 
-      answer3: 
 --- !u!4 &683469050
 Transform:
   m_ObjectHideFlags: 0
@@ -637,6 +605,7 @@ GameObject:
   - component: {fileID: 1400051933}
   - component: {fileID: 1400051936}
   - component: {fileID: 1400051935}
+  - component: {fileID: 1400051937}
   m_Layer: 0
   m_Name: DialogueControllerObject
   m_TagString: Untagged
@@ -656,13 +625,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0c3b83fc91d7aa488105854390f3be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueInterval: 0.05
+  regularInterval: 0.1
+  dotInterval: 0.5
+  commaInterval: 0.25
   dialoguePauseDuration: 1
   dialogueText: {fileID: 1261117432}
   talkerText: {fileID: 2095699073}
-  dialogueMode: 0
-  dialogueTextHolder: {fileID: 683469049}
-  dialogueIndex: {fileID: 1400051935}
+  dialogueMode: 1
+  isPaused: 0
 --- !u!4 &1400051934
 Transform:
   m_ObjectHideFlags: 0
@@ -702,7 +672,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fffb4f3f6099b9d45a60188f4a73a07c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  background: {fileID: 378398798}
+  backgroundReference: {fileID: 0}
+--- !u!114 &1400051937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400051932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee6f812da5864b449bf3b094b7853d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+  - component:
+      talker: Jeff
+      text: Hello, my name is jeff and this is a test if uhh.... this works I guess?
+      background: {fileID: 0}
+    question:
+      isEnabled: 0
+      answer1: 
+      answer2: 
+      answer3: 
+    action:
+      m_PersistentCalls:
+        m_Calls: []
+  - component:
+      talker: You
+      text: Hello jeff
+      background: {fileID: 0}
+    question:
+      isEnabled: 0
+      answer1: 
+      answer2: 
+      answer3: 
+    action:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1573148142
 GameObject:
   m_ObjectHideFlags: 0

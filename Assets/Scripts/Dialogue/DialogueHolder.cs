@@ -24,6 +24,9 @@ public class DialogueHolder : MonoBehaviour
 
     public UnityEvent GetEvent(uint index)
     {
+        if (index >= dialogue.Length)
+            return new UnityEvent();
+            
         return dialogue[index].action;
     }
 }
@@ -42,7 +45,10 @@ public class DialogueObject
     public struct DialogueComponent
     {
         public string talker;
+
+        [TextArea(6, 6)]
         public string text;
+
         public Sprite background;
     }
 
