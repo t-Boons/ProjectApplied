@@ -34,7 +34,10 @@ public class DialogueController : MonoBehaviour
     private uint currentCharacterIndex;
     private bool isDoneWriting, isDoneWithCharacter, isDoneWaiting, hasAborted;
 
-    public event System.Action<uint> OnUpdateTextIndex;
+    public event System.Action<uint> OnUpdateTextIndex = delegate { };
+    public event System.Action<uint> OnFinishedText = delegate { };
+    public event System.Action<uint> OnUpdateCharacter = delegate { };
+
 
     private void Awake()
     {
@@ -47,6 +50,9 @@ public class DialogueController : MonoBehaviour
         isDoneWriting = true;
         isDoneWaiting = true;
         hasAborted = false;
+
+        if (dialogueMode == DialogueMode.Click)
+            NextDialogue();
     }
 
     private void Update()
@@ -54,18 +60,23 @@ public class DialogueController : MonoBehaviour
         if (isPaused)
             return;
 
-        CheckMode();
 
         if (!isDoneWriting &&
             isDoneWaiting &&
             !hasAborted)
             NextCharacter();
+
+        CheckMode();
     }
 
     public void PauseDialogue(bool enabled)
     {
         isPaused = enabled;
-        ResetText();
+    }
+
+    public bool GetPaused()
+    {
+        return isPaused;
     }
 
     public void NextDialogue()
@@ -74,7 +85,6 @@ public class DialogueController : MonoBehaviour
         GetNewTextValues();
         ExecuteEventAction();
         OnUpdateTextIndex(currentTextIndex);
-        SetName(talkerName);
 
         isDoneWriting = false;
     }
@@ -88,11 +98,12 @@ public class DialogueController : MonoBehaviour
     {
         currentTextIndex = dialogueIndex.GetCurrentIndex();
     
+        if (currentTextIndex >= dialogueTextHolder.GetLength())
+            Abort();
+
         finalText = dialogueTextHolder.GetDialogueComponent(currentTextIndex).text;
         talkerName = dialogueTextHolder.GetDialogueComponent(currentTextIndex).talker;
 
-        if (finalText == null || talkerName == null)
-            Abort();
     }
 
     private void Abort()
@@ -105,6 +116,8 @@ public class DialogueController : MonoBehaviour
 
     private void ResetText()
     {
+        SetText("");
+        SetName("");
         currentText = "";
         currentCharacterIndex = 0;
         isDoneWithCharacter = true;
@@ -112,6 +125,10 @@ public class DialogueController : MonoBehaviour
 
     private void NextCharacter()
     {
+        OnUpdateCharacter(currentCharacterIndex);
+
+        SetName(talkerName);
+
         if ((uint)finalText.Length == currentCharacterIndex)
         {
             FinishSentence();
@@ -170,6 +187,8 @@ public class DialogueController : MonoBehaviour
     {
         SetText(finalText);
         isDoneWriting = true;
+
+        OnFinishedText(currentCharacterIndex);
     }
 
     private void CheckForClick()

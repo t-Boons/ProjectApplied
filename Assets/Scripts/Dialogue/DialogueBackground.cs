@@ -6,6 +6,10 @@ public class DialogueBackground : MonoBehaviour
 {
     public Image backgroundReference;
 
+    [Header("Portrait references")]
+    public Image portraitLeftReference;
+    public Image portraitRightReference;
+
     void Start()
     {
         GetComponent<DialogueController>().OnUpdateTextIndex += ChangeBackground;
@@ -13,6 +17,18 @@ public class DialogueBackground : MonoBehaviour
 
     public void ChangeBackground(uint index)
     {
-        backgroundReference.sprite = GetComponent<DialogueHolder>().GetDialogueComponent(index).background;
+        DialogueComponent currentDialogue = GetComponent<DialogueHolder>().GetDialogueComponent(index);
+
+        if(currentDialogue.background != null)
+            backgroundReference.sprite = currentDialogue.background;
+
+
+        if (currentDialogue.leftPortrait != null)
+            portraitLeftReference.sprite = currentDialogue.leftPortrait;
+
+
+        if (currentDialogue.rightPortrait != null)
+            portraitRightReference.sprite = currentDialogue.rightPortrait;
+
     }
 }

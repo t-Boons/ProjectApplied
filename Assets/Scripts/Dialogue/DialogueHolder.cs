@@ -29,6 +29,11 @@ public class DialogueHolder : MonoBehaviour
             
         return dialogue[index].action;
     }
+
+    public uint GetLength()
+    {
+        return (uint)dialogue.Length;
+    }
 }
 
 [System.Serializable]
@@ -50,13 +55,23 @@ public class DialogueObject
         public string text;
 
         public Sprite background;
-    }
 
-    [System.Serializable]
+        [Header("Portaits")]
+        public Sprite leftPortrait;
+        public Sprite rightPortrait;
+
+}
+
+[System.Serializable]
     public struct Question
     {
-        public bool isEnabled;
         public string answer1;
+        public UnityEvent action1;
+
         public string answer2;
+        public UnityEvent action2;
+
         public string answer3;
-    }
+        public UnityEvent action3;
+
+}
