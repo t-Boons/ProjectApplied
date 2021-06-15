@@ -17,9 +17,12 @@ public class DialogueSound : MonoBehaviour
 
     void Start()
     {
+        // Creates audiosource objects
         audioSource = new AudioSource[2];
         audioSource[0] = gameObject.AddComponent<AudioSource>();
         audioSource[1] = gameObject.AddComponent<AudioSource>();
+
+        audioSource[1].loop = true;
 
         GetComponent<DialogueController>().OnUpdateCharacter += PlayVoice;
         GetComponent<DialogueController>().OnUpdateTextIndex += UpdateIndex;
