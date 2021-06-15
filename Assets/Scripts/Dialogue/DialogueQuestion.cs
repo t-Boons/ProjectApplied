@@ -27,10 +27,10 @@ public class DialogueQuestion : MonoBehaviour
     {
         currentIndex = index;
 
-        if (currentIndex >= GetComponent<DialogueHolder>().GetLength())
+        if (currentIndex >= FindObjectOfType<DialogueHolder>().GetLength())
             return;
 
-        Question q = GetComponent<DialogueHolder>().GetQuestion(currentIndex);
+        Question q = FindObjectOfType<DialogueHolder>().GetQuestion(currentIndex);
 
 
         int activeButtonCount = GetActiveButtonCount(q);
@@ -108,13 +108,13 @@ public class DialogueQuestion : MonoBehaviour
 
     private void PickedAnswer(uint answer)
     {
-        Question q = GetComponent<DialogueHolder>().GetQuestion(currentIndex);
+        Question q = FindObjectOfType<DialogueHolder>().GetQuestion(currentIndex);
         
         switch(answer)
         {
-            case 1: q.action1.Invoke(); break;
-            case 2: q.action2.Invoke(); break;
-            case 3: q.action3.Invoke(); break;
+            case 1: if(q.action1 != null) q.action1.Invoke(); break;
+            case 2: if(q.action2 != null) q.action2.Invoke(); break;
+            case 3: if(q.action3 != null) q.action3.Invoke(); break;
             default: Debug.LogError("Question out of range"); break;
         }
 

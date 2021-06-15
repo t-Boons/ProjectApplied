@@ -6,8 +6,16 @@ public class DialogueIndex : MonoBehaviour
 
     public uint GetCurrentIndex()
     {
-        currentIndex++;
         return (uint)currentIndex;
     }
 
+    public void IncrementIndex()
+    {
+        currentIndex++;
+    }
+
+    public void SetIndex(uint index)
+    {
+        currentIndex = (int)index;
+    }
 }

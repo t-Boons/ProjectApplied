@@ -17,7 +17,7 @@ public class DialogueBackground : MonoBehaviour
 
     public void ChangeBackground(uint index)
     {
-        DialogueComponent currentDialogue = GetComponent<DialogueHolder>().GetDialogueComponent(index);
+        DialogueComponent currentDialogue = FindObjectOfType<DialogueHolder>().GetDialogueComponent(index);
 
         if(currentDialogue.background != null)
             backgroundReference.sprite = currentDialogue.background;

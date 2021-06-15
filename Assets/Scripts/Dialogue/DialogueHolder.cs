@@ -1,10 +1,66 @@
 using UnityEngine;
 using UnityEngine.Events;
 
+[ExecuteAlways]
 public class DialogueHolder : MonoBehaviour
 {
+    [Header("Begin music (leave empty for no music)")]
+    public AudioClip beginMusic;
+
     [Header("Main component array")]
-    public DialogueObject[] dialogue; 
+    public DialogueObject[] dialogue;
+
+    private void Update()
+    {
+        FixQuestions();
+    }
+
+    private void FixQuestions()
+    {
+        if (dialogue == null)
+            return;
+
+        foreach(var d in dialogue)
+        {
+            // Fine
+            if (d.question.answer1 != "" &&
+                d.question.answer2 != "" &&
+                d.question.answer3 != "")
+                continue;
+
+            if (d.question.answer1 == "" &&
+                d.question.answer2 == "" &&
+                d.question.answer3 == "")
+                continue;
+
+            // Only 2 and 3
+            if (d.question.answer1 == "" &&
+                d.question.answer2 != "" &&
+                d.question.answer3 != "")
+            {
+                d.question.answer1 = d.question.answer2;
+                d.question.action1 = d.question.action2;
+
+                d.question.answer2 = d.question.answer3;
+                d.question.action2 = d.question.action3;
+
+                d.question.answer3 = "";
+                d.question.action3 = null;
+            }
+
+            // Only 1 and 3
+            if (d.question.answer1 != "" &&
+                d.question.answer2 == "" &&
+                d.question.answer3 != "")
+            {
+                d.question.answer2 = d.question.answer3;
+                d.question.action2 = d.question.action3;
+
+                d.question.answer3 = "";
+                d.question.action3 = null;
+            }
+        }
+    }
 
     public DialogueComponent GetDialogueComponent(uint index)
     {
@@ -27,7 +83,7 @@ public class DialogueHolder : MonoBehaviour
         if (index >= dialogue.Length)
             return new UnityEvent();
             
-        return dialogue[index].action;
+        return dialogue[index].component.action;
     }
 
     public uint GetLength()
@@ -41,15 +97,15 @@ public class DialogueObject
 {
     public DialogueComponent component;
     public Question question;
-
-    [Header("Event")]
-    public UnityEvent action;
 }
 
     [System.Serializable]
     public struct DialogueComponent
     {
         public string talker;
+
+        [Header("Talking Sound")]
+        public AudioClip soundType;
 
         [TextArea(6, 6)]
         public string text;
@@ -60,6 +116,8 @@ public class DialogueObject
         public Sprite leftPortrait;
         public Sprite rightPortrait;
 
+        [Header("Event")]
+        public UnityEvent action;
 }
 
 [System.Serializable]
@@ -73,5 +131,4 @@ public class DialogueObject
 
         public string answer3;
         public UnityEvent action3;
-
 }

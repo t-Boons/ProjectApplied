@@ -4,8 +4,8 @@ using System.Collections;
 
 public enum DialogueMode { Click, Auto, Script }
 
-[RequireComponent(typeof(DialogueHolder))]
 [RequireComponent(typeof(DialogueIndex))]
+[RequireComponent(typeof(DialogueName))]
 public class DialogueController : MonoBehaviour
 {
     [Header("Speed at which the dialogue is played at.")]
@@ -21,9 +21,9 @@ public class DialogueController : MonoBehaviour
     [Header("Set dialogue mode.")]
     public DialogueMode dialogueMode;
 
-    [Header("Dialogue objects")]
     private DialogueHolder dialogueTextHolder;
     private DialogueIndex dialogueIndex;
+    private DialogueName dialogueName;
 
     [Header("Pauses dialogue")]
     public bool isPaused;
@@ -36,13 +36,21 @@ public class DialogueController : MonoBehaviour
 
     public event System.Action<uint> OnUpdateTextIndex = delegate { };
     public event System.Action<uint> OnFinishedText = delegate { };
-    public event System.Action<uint> OnUpdateCharacter = delegate { };
+    public event System.Action<bool> OnUpdateCharacter = delegate { };
 
 
     private void Awake()
     {
-        dialogueTextHolder = GetComponent<DialogueHolder>();
+        if (FindObjectOfType<DialogueHolder>())
+            dialogueTextHolder = FindObjectOfType<DialogueHolder>();
+        else
+        {
+            Debug.LogError("Dialogue Holder Object could not be found in the scene!");
+            this.enabled = false;
+        }
+
         dialogueIndex = GetComponent<DialogueIndex>();
+        dialogueName = GetComponent<DialogueName>();
     }
 
     private void Start()
@@ -51,8 +59,9 @@ public class DialogueController : MonoBehaviour
         isDoneWaiting = true;
         hasAborted = false;
 
+        // Start dialogue trigger if on Click mode
         if (dialogueMode == DialogueMode.Click)
-            NextDialogue();
+            StartCoroutine(StartNewDialogue());
     }
 
     private void Update()
@@ -96,13 +105,14 @@ public class DialogueController : MonoBehaviour
 
     private void GetNewTextValues()
     {
+        dialogueIndex.IncrementIndex();
         currentTextIndex = dialogueIndex.GetCurrentIndex();
     
         if (currentTextIndex >= dialogueTextHolder.GetLength())
             Abort();
 
-        finalText = dialogueTextHolder.GetDialogueComponent(currentTextIndex).text;
-        talkerName = dialogueTextHolder.GetDialogueComponent(currentTextIndex).talker;
+        finalText = dialogueName.FormatWithName(dialogueTextHolder.GetDialogueComponent(currentTextIndex).text);
+        talkerName = dialogueName.FormatWithName(dialogueTextHolder.GetDialogueComponent(currentTextIndex).talker);
 
     }
 
@@ -125,8 +135,6 @@ public class DialogueController : MonoBehaviour
 
     private void NextCharacter()
     {
-        OnUpdateCharacter(currentCharacterIndex);
-
         SetName(talkerName);
 
         if ((uint)finalText.Length == currentCharacterIndex)
@@ -150,12 +158,23 @@ public class DialogueController : MonoBehaviour
 
         currentCharacterIndex++;
 
-        if(nextCharacter == ',')
+        // OnUpdateCharacter "false" if character is readable (like abc)
+
+        if (nextCharacter == ',')
+        {
+            OnUpdateCharacter(true);
             yield return new WaitForSeconds(commaInterval);
-        else if(nextCharacter == '.')
+        }
+        else if (nextCharacter == '.')
+        {
+            OnUpdateCharacter(true);
             yield return new WaitForSeconds(dotInterval);
+        }
         else
+        {
+            OnUpdateCharacter(false);
             yield return new WaitForSeconds(regularInterval);
+        }
 
         isDoneWithCharacter = true;
     }
