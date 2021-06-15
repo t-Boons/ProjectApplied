@@ -13,6 +13,11 @@ public class UiModeButton : MonoBehaviour
         DialogueController controller = FindObjectOfType<DialogueController>();
 
         controller.SetDialogueMode(mode);
+
+        if (controller.GetDialogueMode() == DialogueMode.Auto)
+            speedupImage.enabled = true;
+        else
+            speedupImage.enabled = false;
     }
 
     public void SwitchMode()
@@ -22,11 +27,13 @@ public class UiModeButton : MonoBehaviour
         if (controller.GetDialogueMode() == DialogueMode.Auto)
         {
             controller.SetDialogueMode(DialogueMode.Click);
+            mode = DialogueMode.Click;
             speedupImage.enabled = false;
         }
         else if (controller.GetDialogueMode() == DialogueMode.Click)
         {
             controller.SetDialogueMode(DialogueMode.Auto);
+            mode = DialogueMode.Auto;
             speedupImage.enabled = true;
         }
     }

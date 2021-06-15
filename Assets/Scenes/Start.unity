@@ -398,6 +398,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5352691833014166793, guid: 3bf0c134c71d98946abf7722e6a313ef, type: 3}
+      propertyPath: dialogue.Array.data[0].component.leftPortrait
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5352691833014166793, guid: 3bf0c134c71d98946abf7722e6a313ef, type: 3}
+      propertyPath: dialogue.Array.data[0].component.rightPortrait
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5352691833014166793, guid: 3bf0c134c71d98946abf7722e6a313ef, type: 3}
       propertyPath: dialogue.Array.data[5].component.action.m_PersistentCalls.m_Calls.Array.size
       value: 2
       objectReference: {fileID: 0}
