@@ -43,12 +43,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee6f812da5864b449bf3b094b7853d84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beginMusic: {fileID: 8300000, guid: 54b5acaae0b17754eb2acec45851357f, type: 3}
+  beginMusic: {fileID: 8300000, guid: 52a529ab1eec735408edee41d4a72d43, type: 3}
   dialogue:
   - component:
-      talker: 
-      soundType: {fileID: 0}
-      text: 
+      talker: asdf
+      soundType: {fileID: 8300000, guid: 9224110eb84547c4baef3eb50fdfa256, type: 3}
+      text: dfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+      background: {fileID: 0}
+      leftPortrait: {fileID: 0}
+      rightPortrait: {fileID: 0}
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+  - component:
+      talker: asdf
+      soundType: {fileID: 8300000, guid: 9224110eb84547c4baef3eb50fdfa256, type: 3}
+      text: dfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
       background: {fileID: 0}
       leftPortrait: {fileID: 0}
       rightPortrait: {fileID: 0}

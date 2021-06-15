@@ -13,6 +13,7 @@ public class DialogueBackground : MonoBehaviour
     void Start()
     {
         GetComponent<DialogueController>().OnUpdateTextIndex += ChangeBackground;
+        ChangeBackground(0);
     }
 
     public void ChangeBackground(uint index)

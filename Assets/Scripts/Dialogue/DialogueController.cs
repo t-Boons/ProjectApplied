@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 
-public enum DialogueMode { Click, Auto, Script }
+public enum DialogueMode { Click, Auto }
 
 [RequireComponent(typeof(DialogueIndex))]
 [RequireComponent(typeof(DialogueName))]
@@ -18,15 +18,14 @@ public class DialogueController : MonoBehaviour
     public Text dialogueText;
     public Text talkerText;
 
-    [Header("Set dialogue mode.")]
-    public DialogueMode dialogueMode;
+
+    [Header("Pauses dialogue")]
+    public bool isPaused;
 
     private DialogueHolder dialogueTextHolder;
     private DialogueIndex dialogueIndex;
     private DialogueName dialogueName;
-
-    [Header("Pauses dialogue")]
-    public bool isPaused;
+    private DialogueMode dialogueMode;
 
     private uint currentTextIndex;
     private string finalText, currentText;
@@ -38,37 +37,28 @@ public class DialogueController : MonoBehaviour
     public event System.Action<uint> OnFinishedText = delegate { };
     public event System.Action<bool> OnUpdateCharacter = delegate { };
 
-
-    private void Awake()
+    private void Start()
     {
         if (FindObjectOfType<DialogueHolder>())
             dialogueTextHolder = FindObjectOfType<DialogueHolder>();
         else
         {
             Debug.LogError("Dialogue Holder Object could not be found in the scene!");
-            this.enabled = false;
+            enabled = false;
         }
 
         dialogueIndex = GetComponent<DialogueIndex>();
         dialogueName = GetComponent<DialogueName>();
-    }
 
-    private void Start()
-    {
         isDoneWriting = true;
         isDoneWaiting = true;
         hasAborted = false;
-
-        // Start dialogue trigger if on Click mode
-        if (dialogueMode == DialogueMode.Click)
-            StartCoroutine(StartNewDialogue());
     }
 
-    private void Update()
+    private void LateUpdate()
     {
         if (isPaused)
             return;
-
 
         if (!isDoneWriting &&
             isDoneWaiting &&
@@ -76,16 +66,6 @@ public class DialogueController : MonoBehaviour
             NextCharacter();
 
         CheckMode();
-    }
-
-    public void PauseDialogue(bool enabled)
-    {
-        isPaused = enabled;
-    }
-
-    public bool GetPaused()
-    {
-        return isPaused;
     }
 
     public void NextDialogue()
@@ -179,23 +159,10 @@ public class DialogueController : MonoBehaviour
         isDoneWithCharacter = true;
     }
 
-    private void SetName(string name)
-    {
-        talkerText.text = name;
-    }
-
-    private void SetText(string text)
-    {
-        dialogueText.text = text;
-    }
-
     private void CheckMode()
     {
         switch (dialogueMode)
         {
-            case DialogueMode.Click:
-                CheckForClick();
-                break;
             case DialogueMode.Auto:
                 AutomaticDialogue();
                 break;
@@ -207,20 +174,25 @@ public class DialogueController : MonoBehaviour
         SetText(finalText);
         isDoneWriting = true;
 
-        OnFinishedText(currentCharacterIndex);
+        OnFinishedText(currentTextIndex);
     }
 
-    private void CheckForClick()
+    public void ClickDialogue()
     {
-        if (Input.GetMouseButtonDown(0))
-            if (isDoneWriting)
-                NextDialogue();
-            else
-                FinishSentence();
+        if (isPaused || dialogueMode == DialogueMode.Auto)
+            return;
+
+        if (isDoneWriting)
+            NextDialogue();
+        else
+            FinishSentence();
     }
 
     private void AutomaticDialogue()
     {
+        if (isPaused)
+            return;
+
         if (isDoneWriting && isDoneWaiting)
         {
             isDoneWaiting = false;
@@ -233,5 +205,36 @@ public class DialogueController : MonoBehaviour
         yield return new WaitForSeconds(dialoguePauseDuration);
         isDoneWaiting = true;
         NextDialogue();
+    }
+
+
+    public DialogueMode GetDialogueMode()
+    {
+        return dialogueMode;
+    }
+
+    public void SetDialogueMode(DialogueMode mode)
+    {
+        dialogueMode = mode;
+    }
+
+    public void PauseDialogue(bool enabled)
+    {
+        isPaused = enabled;
+    }
+
+    public bool GetPaused()
+    {
+        return isPaused;
+    }
+
+    private void SetName(string name)
+    {
+        talkerText.text = name;
+    }
+
+    private void SetText(string text)
+    {
+        dialogueText.text = text;
     }
 }

@@ -5,7 +5,7 @@ public class DialogueName : MonoBehaviour
     public static string playerName = "Player";
 
     [Header("To be inserted to print name in text")]
-    [SerializeField] private string insertName = "#n";
+    [SerializeField] private char insertChar = '#';
 
     public string GetName()
     {
@@ -24,14 +24,12 @@ public class DialogueName : MonoBehaviour
 
         string s = "";
 
-        foreach (string word in text.Split(' '))
+        foreach (char character in text)
         {
-            if (word == insertName)
+            if (character == insertChar)
                 s += playerName;
             else
-                s += word;
-
-            s += " ";
+                s += character;
         }
 
         return s;

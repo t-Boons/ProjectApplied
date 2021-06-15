@@ -14,7 +14,7 @@ public class DialogueQuestion : MonoBehaviour
 
     void Start()
     {
-        GetComponent<DialogueController>().OnUpdateTextIndex += SetActiveButtons;
+        GetComponent<DialogueController>().OnFinishedText += SetActiveButtons;
 
         button1.onClick.AddListener(delegate { PickedAnswer(1); });
         button2.onClick.AddListener(delegate { PickedAnswer(2); });

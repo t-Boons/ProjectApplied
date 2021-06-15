@@ -1,0 +1,33 @@
+using UnityEngine;
+using UnityEngine.UI;
+
+public class UiModeButton : MonoBehaviour
+{
+    private static DialogueMode mode = DialogueMode.Click;
+
+    public Button modeButton;
+    public Image speedupImage;
+
+    public void Start()
+    {
+        DialogueController controller = FindObjectOfType<DialogueController>();
+
+        controller.SetDialogueMode(mode);
+    }
+
+    public void SwitchMode()
+    {
+        DialogueController controller = FindObjectOfType<DialogueController>();
+
+        if (controller.GetDialogueMode() == DialogueMode.Auto)
+        {
+            controller.SetDialogueMode(DialogueMode.Click);
+            speedupImage.enabled = false;
+        }
+        else if (controller.GetDialogueMode() == DialogueMode.Click)
+        {
+            controller.SetDialogueMode(DialogueMode.Auto);
+            speedupImage.enabled = true;
+        }
+    }
+}
