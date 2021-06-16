@@ -40,11 +40,31 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene(index);
     }
 
+    public void LoadScene(string name)
+    {
+        if (isFadeEnabled)
+        {
+            isFadeEnabled = true;
+            StartCoroutine(FadeToScene(name));
+            return;
+        }
+        isFadeEnabled = false;
+        SceneManager.LoadScene(name);
+    }
+
     private IEnumerator FadeToScene(int index)
     {
         controller.FadeOut();
         yield return new WaitForSeconds(1);
         SceneManager.LoadScene(index);
+
+    }
+
+    private IEnumerator FadeToScene(string name)
+    {
+        controller.FadeOut();
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene(name);
 
     }
 }

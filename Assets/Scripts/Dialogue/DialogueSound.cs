@@ -90,7 +90,13 @@ public class DialogueSound : MonoBehaviour
             return;
 
         audioSource[1].Stop();
-        audioSource[1].PlayOneShot(clip);
+        audioSource[1].clip = clip;
+        audioSource[1].Play();
+    }
+
+    public void PlaySound(AudioClip sound)
+    {
+        audioSource[1].PlayOneShot(sound);
     }
 
     private void SetVoiceVolume(float volume)

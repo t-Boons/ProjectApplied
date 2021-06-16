@@ -53,6 +53,9 @@ public class DialogueController : MonoBehaviour
         isDoneWriting = true;
         isDoneWaiting = true;
         hasAborted = false;
+
+        if (dialogueMode == DialogueMode.Click)
+            ClickDialogue();
     }
 
     private void LateUpdate()

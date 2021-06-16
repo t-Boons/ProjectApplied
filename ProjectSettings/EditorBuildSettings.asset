@@ -9,9 +9,36 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Start.unity
+    path: Assets/Scenes/Beginning/Start.unity
     guid: daa44168f8de3944fa52186b7189efa0
   - enabled: 1
-    path: Assets/Scenes/ONo.unity
-    guid: 6533674ed3f66b546a0bf036f995803b
+    path: Assets/Scenes/Beginning/ShootTheSoldier.unity
+    guid: 9846a2573760bef4e82a83fc4f477d60
+  - enabled: 1
+    path: Assets/Scenes/Beginning/DontShootTheSoldier.unity
+    guid: a3ef35f0fe45222468df9410dae8d062
+  - enabled: 1
+    path: Assets/Scenes/Beginning/GrandpaWasRight1.unity
+    guid: b6d01b36956ae684cb022faddf7c56d9
+  - enabled: 1
+    path: Assets/Scenes/Beginning/GrandpaWasRight2.unity
+    guid: 8dd801084ee6f8c4f890406202eedf39
+  - enabled: 1
+    path: Assets/Scenes/Beginning/ThinkICanDoThat.unity
+    guid: 29ebfa7403d7a2f4a91a7abf9b6bff4a
+  - enabled: 1
+    path: Assets/Scenes/Beginning/DontThinkICanDoThat.unity
+    guid: 8923f125e38966947b91bccabf9484ac
+  - enabled: 1
+    path: Assets/Scenes/Beginning/NotDoingIt.unity
+    guid: af78a5e130d8de24db1ca8c24e58fee2
+  - enabled: 1
+    path: Assets/Scenes/Beginning/ForTheQueen.unity
+    guid: 11d9bb89b18894849b2e7a581ad243a9
+  - enabled: 1
+    path: Assets/Scenes/BadPath/TheAntHill1.unity
+    guid: 9d62f695ab0647448a381b0e2301f7be
+  - enabled: 1
+    path: Assets/Scenes/GoodPath/TheAntHill2.unity
+    guid: 038c656090f7c344ca91e2ed043e69af
   m_configObjects: {}
