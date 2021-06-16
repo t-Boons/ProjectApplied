@@ -36,24 +36,33 @@ EditorBuildSettings:
     path: Assets/Scenes/Beginning/ForTheQueen.unity
     guid: 11d9bb89b18894849b2e7a581ad243a9
   - enabled: 1
-    path: Assets/Scenes/GoodPath1/TheAntHill1.unity
+    path: Assets/Scenes/BadPath/TheAntHill1.unity
     guid: 9d62f695ab0647448a381b0e2301f7be
   - enabled: 1
-    path: Assets/Scenes/BadPath2/TheAntHill2.unity
+    path: Assets/Scenes/GoodPath/TheAntHill2.unity
     guid: 038c656090f7c344ca91e2ed043e69af
   - enabled: 1
-    path: Assets/Scenes/GoodPath1/RefCenter1.unity
+    path: Assets/Scenes/BadPath/RefCenter1.unity
     guid: 5221c211db4d16f45a5b2009af25ffcb
   - enabled: 1
-    path: Assets/Scenes/BadPath2/RefCenter2.unity
+    path: Assets/Scenes/GoodPath/RefCenter2.unity
     guid: 7922f36ba382b834da61adc28104df96
   - enabled: 1
-    path: Assets/Scenes/BadPath2/RefugeeArea2.unity
+    path: Assets/Scenes/GoodPath/RefugeeArea2.unity
     guid: 116b4c435ff295b43b976d6d1cc975fe
   - enabled: 1
-    path: Assets/Scenes/BadPath2/MedicalArea2.unity
+    path: Assets/Scenes/GoodPath/MedicalArea2.unity
     guid: 0aa670162de6ad64aa1bf38423393a13
   - enabled: 1
-    path: Assets/Scenes/BadPath2/Beeps2.unity
+    path: Assets/Scenes/GoodPath/Beeps2.unity
     guid: 61e2ee5907ed1284ebdf5cba6c773dbb
+  - enabled: 1
+    path: Assets/Scenes/BadPath/Beeps1.unity
+    guid: 9a98493fe828ecd4a94ce970e713213e
+  - enabled: 1
+    path: Assets/Scenes/BadPath/MedicalArea1.unity
+    guid: 6e8dcf699d6c9f341a45dbbef33bc9e5
+  - enabled: 1
+    path: Assets/Scenes/BadPath/RefugeeArea1.unity
+    guid: 675037fca5c9e5148aa7159ee3323b41
   m_configObjects: {}
