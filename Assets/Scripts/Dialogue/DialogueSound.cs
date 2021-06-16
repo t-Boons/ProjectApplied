@@ -30,6 +30,9 @@ public class DialogueSound : MonoBehaviour
 
         if(FindObjectOfType<DialogueHolder>())
             PlayMusic(FindObjectOfType<DialogueHolder>().beginMusic);
+    
+        if(FindObjectOfType<DialogueHolder>().GetDialogueComponent(0).soundType != null)
+            currentSound = FindObjectOfType<DialogueHolder>().GetDialogueComponent(0).soundType;
 
         UpdateVolumeSettings();
     }
