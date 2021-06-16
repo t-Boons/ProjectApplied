@@ -229,7 +229,7 @@ MonoBehaviour:
         from out of nowhere. we were able to save the queen, may god bless her.
       background: {fileID: 21300000, guid: adbceb272e4d10a47bbedde120803eef, type: 3}
       leftPortrait: {fileID: 21300000, guid: 6022947346151fa46955abee36445427, type: 3}
-      rightPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
+      rightPortrait: {fileID: 21300000, guid: 3c1806a555d4ef84089d5801f189137e, type: 3}
       action:
         m_PersistentCalls:
           m_Calls:
@@ -263,7 +263,7 @@ MonoBehaviour:
       soundType: {fileID: 8300000, guid: ca1789bf4c5166b41877e35a115bbb4d, type: 3}
       text: "Damn, when did that happen?\u201D"
       background: {fileID: 0}
-      leftPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
+      leftPortrait: {fileID: 21300000, guid: 3c1806a555d4ef84089d5801f189137e, type: 3}
       rightPortrait: {fileID: 21300000, guid: 6022947346151fa46955abee36445427, type: 3}
       action:
         m_PersistentCalls:
@@ -313,7 +313,7 @@ MonoBehaviour:
         like it was an abandoned ant hill.
       background: {fileID: 0}
       leftPortrait: {fileID: 21300000, guid: 6022947346151fa46955abee36445427, type: 3}
-      rightPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
+      rightPortrait: {fileID: 21300000, guid: 3c1806a555d4ef84089d5801f189137e, type: 3}
       action:
         m_PersistentCalls:
           m_Calls: []
@@ -335,7 +335,7 @@ MonoBehaviour:
       soundType: {fileID: 8300000, guid: ca1789bf4c5166b41877e35a115bbb4d, type: 3}
       text: "My wife\u2026 my children\u2026 are they safe?"
       background: {fileID: 0}
-      leftPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
+      leftPortrait: {fileID: 21300000, guid: 3c1806a555d4ef84089d5801f189137e, type: 3}
       rightPortrait: {fileID: 21300000, guid: 6022947346151fa46955abee36445427, type: 3}
       action:
         m_PersistentCalls:
@@ -359,7 +359,7 @@ MonoBehaviour:
       text: "I don\u2019t know, you should probably go look for her yourself"
       background: {fileID: 0}
       leftPortrait: {fileID: 21300000, guid: 6022947346151fa46955abee36445427, type: 3}
-      rightPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
+      rightPortrait: {fileID: 21300000, guid: 3c1806a555d4ef84089d5801f189137e, type: 3}
       action:
         m_PersistentCalls:
           m_Calls: []

@@ -160,6 +160,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1271571031639164200, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
+      propertyPath: m_Text
+      value: dfdf
+      objectReference: {fileID: 0}
     - target: {fileID: 1271571032382290257, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
       propertyPath: m_Name
       value: DialogueSceneObject
@@ -447,7 +451,7 @@ MonoBehaviour:
         in the war!
       background: {fileID: 0}
       leftPortrait: {fileID: 21300000, guid: 6022947346151fa46955abee36445427, type: 3}
-      rightPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
+      rightPortrait: {fileID: 21300000, guid: 3c1806a555d4ef84089d5801f189137e, type: 3}
       action:
         m_PersistentCalls:
           m_Calls: []
@@ -494,7 +498,7 @@ MonoBehaviour:
       soundType: {fileID: 8300000, guid: ca1789bf4c5166b41877e35a115bbb4d, type: 3}
       text: How long was I out?
       background: {fileID: 0}
-      leftPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
+      leftPortrait: {fileID: 21300000, guid: 3c1806a555d4ef84089d5801f189137e, type: 3}
       rightPortrait: {fileID: 0}
       action:
         m_PersistentCalls:
@@ -519,7 +523,7 @@ MonoBehaviour:
         taken that nap boy!"
       background: {fileID: 0}
       leftPortrait: {fileID: 21300000, guid: 6022947346151fa46955abee36445427, type: 3}
-      rightPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
+      rightPortrait: {fileID: 21300000, guid: 3c1806a555d4ef84089d5801f189137e, type: 3}
       action:
         m_PersistentCalls:
           m_Calls: []

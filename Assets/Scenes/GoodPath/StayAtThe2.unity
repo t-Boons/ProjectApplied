@@ -123,7 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &461648708
+--- !u!1001 &260624142
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -138,17 +138,13 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1271571032143817172, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1271571032382290257, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
       propertyPath: m_Name
       value: DialogueSceneObject
       objectReference: {fileID: 0}
     - target: {fileID: 1271571032382290259, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1271571032382290259, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
       propertyPath: m_LocalPosition.x
@@ -200,7 +196,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
---- !u!1001 &691830457
+--- !u!1001 &491977442
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -213,7 +209,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1088131105050332014, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1088131105050332014, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
       propertyPath: m_LocalPosition.x
@@ -257,10 +253,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
---- !u!114 &691830458 stripped
+--- !u!114 &491977443 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1088131105050332013, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
-  m_PrefabInstance: {fileID: 691830457}
+  m_PrefabInstance: {fileID: 491977442}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -268,219 +264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 508a2a04ca9301143ac5c30b7014196b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1115395725
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1115395727}
-  - component: {fileID: 1115395726}
-  m_Layer: 0
-  m_Name: DialogueHolderObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1115395726
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1115395725}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee6f812da5864b449bf3b094b7853d84, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  beginMusic: {fileID: 8300000, guid: bd90d87c006cc0d4b813cc6115e91e94, type: 3}
-  dialogue:
-  - component:
-      talker: '#'
-      soundType: {fileID: 8300000, guid: ca1789bf4c5166b41877e35a115bbb4d, type: 3}
-      text: Alright tell me who it is.
-      background: {fileID: 0}
-      leftPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
-      rightPortrait: {fileID: 21300000, guid: a96c6d2ae848a63469211e437f11cc8d, type: 3}
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-    question:
-      answer1: 
-      action1:
-        m_PersistentCalls:
-          m_Calls: []
-      answer2: 
-      action2:
-        m_PersistentCalls:
-          m_Calls: []
-      answer3: 
-      action3:
-        m_PersistentCalls:
-          m_Calls: []
-  - component:
-      talker: Grandpa
-      soundType: {fileID: 8300000, guid: 82189e24a3a0b854ebd3b3334f1fd8d3, type: 3}
-      text: "I\u2019ve been hearing beeps late at night, turns out the guy 5 beds
-        over has been trying to contact his home base, he\u2019s getting discharged
-        tonight. ever since he came in here he never took a bath. sometimes he falls
-        in the dirt multiple times per day."
-      background: {fileID: 0}
-      leftPortrait: {fileID: 21300000, guid: a96c6d2ae848a63469211e437f11cc8d, type: 3}
-      rightPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-    question:
-      answer1: 
-      action1:
-        m_PersistentCalls:
-          m_Calls: []
-      answer2: 
-      action2:
-        m_PersistentCalls:
-          m_Calls: []
-      answer3: 
-      action3:
-        m_PersistentCalls:
-          m_Calls: []
-  - component:
-      talker: '#'
-      soundType: {fileID: 8300000, guid: ca1789bf4c5166b41877e35a115bbb4d, type: 3}
-      text: So? his bed might be unstable.
-      background: {fileID: 0}
-      leftPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
-      rightPortrait: {fileID: 21300000, guid: a96c6d2ae848a63469211e437f11cc8d, type: 3}
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-    question:
-      answer1: 
-      action1:
-        m_PersistentCalls:
-          m_Calls: []
-      answer2: 
-      action2:
-        m_PersistentCalls:
-          m_Calls: []
-      answer3: 
-      action3:
-        m_PersistentCalls:
-          m_Calls: []
-  - component:
-      talker: Grandpa
-      soundType: {fileID: 8300000, guid: 82189e24a3a0b854ebd3b3334f1fd8d3, type: 3}
-      text: "Yeah but if you look at him before he does it you can notice some red
-        spots. he\u2019s imposing as one of us."
-      background: {fileID: 0}
-      leftPortrait: {fileID: 21300000, guid: a96c6d2ae848a63469211e437f11cc8d, type: 3}
-      rightPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-    question:
-      answer1: 
-      action1:
-        m_PersistentCalls:
-          m_Calls: []
-      answer2: 
-      action2:
-        m_PersistentCalls:
-          m_Calls: []
-      answer3: 
-      action3:
-        m_PersistentCalls:
-          m_Calls: []
-  - component:
-      talker: '#'
-      soundType: {fileID: 8300000, guid: ca1789bf4c5166b41877e35a115bbb4d, type: 3}
-      text: "Good to know. thanks grandpa, i\u2019ll take care of this."
-      background: {fileID: 0}
-      leftPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
-      rightPortrait: {fileID: 0}
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-    question:
-      answer1: 
-      action1:
-        m_PersistentCalls:
-          m_Calls: []
-      answer2: 
-      action2:
-        m_PersistentCalls:
-          m_Calls: []
-      answer3: 
-      action3:
-        m_PersistentCalls:
-          m_Calls: []
-  - component:
-      talker: 
-      soundType: {fileID: 8300000, guid: e76f683410bf7494b997f598cb742bf3, type: 3}
-      text: You start to create a plan of attack on the spy, what could be the best
-        way to go about this?
-      background: {fileID: 0}
-      leftPortrait: {fileID: 0}
-      rightPortrait: {fileID: 0}
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-    question:
-      answer1: Get help from LT. Anthony
-      action1:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 691830458}
-            m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-            m_MethodName: LoadScene
-            m_Mode: 5
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: HelpFromAnthony
-              m_BoolArgument: 0
-            m_CallState: 2
-      answer2: Figure it out yourself
-      action2:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 691830458}
-            m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-            m_MethodName: LoadScene
-            m_Mode: 5
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: StayAtThe2
-              m_BoolArgument: 0
-            m_CallState: 2
-      answer3: 
-      action3:
-        m_PersistentCalls:
-          m_Calls: []
---- !u!4 &1115395727
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1115395725}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.45237, y: 63.69512, z: -22.539398}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &2124751838
+--- !u!1001 &1247433029
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -497,7 +281,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7791644560647213499, guid: 28d15e211242545409cc2f16e31b1f3f, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7791644560647213499, guid: 28d15e211242545409cc2f16e31b1f3f, type: 3}
       propertyPath: m_AnchorMax.x
@@ -577,3 +361,167 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28d15e211242545409cc2f16e31b1f3f, type: 3}
+--- !u!1 &1642016055
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1642016057}
+  - component: {fileID: 1642016056}
+  m_Layer: 0
+  m_Name: DialogueHolderObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1642016056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1642016055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee6f812da5864b449bf3b094b7853d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  beginMusic: {fileID: 8300000, guid: 35ad2b207a7d8ad4c8979dd8f6e38a82, type: 3}
+  dialogue:
+  - component:
+      talker: 
+      soundType: {fileID: 8300000, guid: e76f683410bf7494b997f598cb742bf3, type: 3}
+      text: You stay at the refugee center, helping where you can whilst keeping
+        a close eye on the spy. grandpa was right once again, just before he falls
+        you notice some red spots especially his back.
+      background: {fileID: 0}
+      leftPortrait: {fileID: 0}
+      rightPortrait: {fileID: 0}
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+  - component:
+      talker: '#'
+      soundType: {fileID: 8300000, guid: ca1789bf4c5166b41877e35a115bbb4d, type: 3}
+      text: "It\u2019s getting late, the spy is getting discharged soon. I should
+        head to the entrance. there should be no one there right now."
+      background: {fileID: 0}
+      leftPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
+      rightPortrait: {fileID: 0}
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+  - component:
+      talker: 
+      soundType: {fileID: 8300000, guid: e76f683410bf7494b997f598cb742bf3, type: 3}
+      text: You wait for a while, but eventually you see him coming out.
+      background: {fileID: 0}
+      leftPortrait: {fileID: 0}
+      rightPortrait: {fileID: 0}
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+  - component:
+      talker: '#'
+      soundType: {fileID: 8300000, guid: ca1789bf4c5166b41877e35a115bbb4d, type: 3}
+      text: Should i follow him or take him down right here and now?
+      background: {fileID: 0}
+      leftPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
+      rightPortrait: {fileID: 0}
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+    question:
+      answer1: Follow Him
+      action1:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 491977443}
+            m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+            m_MethodName: LoadScene
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: PointGun2
+              m_BoolArgument: 0
+            m_CallState: 2
+      answer2: Take him down
+      action2:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 491977443}
+            m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+            m_MethodName: LoadScene
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: SneakUp2
+              m_BoolArgument: 0
+            m_CallState: 2
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+--- !u!4 &1642016057
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1642016055}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 24.45237, y: 63.69512, z: -22.539398}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

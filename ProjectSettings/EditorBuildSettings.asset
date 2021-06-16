@@ -65,4 +65,31 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BadPath/RefugeeArea1.unity
     guid: 675037fca5c9e5148aa7159ee3323b41
+  - enabled: 1
+    path: Assets/Scenes/GoodPath/AnotherWay.unity
+    guid: a1274d792b43cc34cba0e7ab88ca4643
+  - enabled: 1
+    path: Assets/Scenes/GoodPath/StickToPlan.unity
+    guid: 70d318f565647df41aac2dba75e49c25
+  - enabled: 1
+    path: Assets/Scenes/BadPath/StayAtThe1.unity
+    guid: 361230d36f5baa34db88c34fa965eb87
+  - enabled: 1
+    path: Assets/Scenes/GoodPath/StayAtThe2.unity
+    guid: 1a4310de4e46ac84fa345f1baabf0418
+  - enabled: 1
+    path: Assets/Scenes/BadPath/PointGun1.unity
+    guid: 63bd1d6771be7df489f2558f92c6d419
+  - enabled: 1
+    path: Assets/Scenes/GoodPath/GetHelpFromAnthony.unity
+    guid: 0d3eb82791db22e4385d7fcc8ebe95f6
+  - enabled: 1
+    path: Assets/Scenes/BadPath/SneakUp1.unity
+    guid: 58cb8c82479985e42813347e2555c37f
+  - enabled: 1
+    path: Assets/Scenes/GoodPath/PointGun2.unity
+    guid: a2af75b4d7c878343b47f2d2e47b112f
+  - enabled: 1
+    path: Assets/Scenes/GoodPath/SneakUp2.unity
+    guid: fea51e0c17270434298ef64f14a51d6a
   m_configObjects: {}

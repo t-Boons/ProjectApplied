@@ -250,7 +250,7 @@ MonoBehaviour:
       soundType: {fileID: 8300000, guid: ca1789bf4c5166b41877e35a115bbb4d, type: 3}
       text: I think I can do that...
       background: {fileID: 21300000, guid: 0f94d25792ffd8c49933fec2aeb73733, type: 3}
-      leftPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
+      leftPortrait: {fileID: 21300000, guid: 3c1806a555d4ef84089d5801f189137e, type: 3}
       rightPortrait: {fileID: 21300000, guid: 6022947346151fa46955abee36445427, type: 3}
       action:
         m_PersistentCalls:
@@ -274,7 +274,7 @@ MonoBehaviour:
       text: Glad to hear it.
       background: {fileID: 21300000, guid: 0f94d25792ffd8c49933fec2aeb73733, type: 3}
       leftPortrait: {fileID: 21300000, guid: 6022947346151fa46955abee36445427, type: 3}
-      rightPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
+      rightPortrait: {fileID: 21300000, guid: 3c1806a555d4ef84089d5801f189137e, type: 3}
       action:
         m_PersistentCalls:
           m_Calls:

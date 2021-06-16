@@ -15,7 +15,7 @@ public class DialogueSound : MonoBehaviour
     private AudioSource[] audioSource;
     private AudioClip currentSound;
 
-    void Start()
+    private void Awake()
     {
         // Creates audiosource objects
         audioSource = new AudioSource[2];

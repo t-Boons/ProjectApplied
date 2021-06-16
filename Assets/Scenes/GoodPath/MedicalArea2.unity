@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee6f812da5864b449bf3b094b7853d84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beginMusic: {fileID: 8300000, guid: c38b1d95512488d4ab3dc4fb5409f468, type: 3}
+  beginMusic: {fileID: 8300000, guid: bd90d87c006cc0d4b813cc6115e91e94, type: 3}
   dialogue:
   - component:
       talker: 
@@ -457,6 +457,27 @@ MonoBehaviour:
       rightPortrait: {fileID: 0}
       action:
         m_PersistentCalls:
+          m_Calls: []
+    question:
+      answer1: Is there another way?
+      action1:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 60999377}
+            m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+            m_MethodName: LoadScene
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: AnotherWay
+              m_BoolArgument: 0
+            m_CallState: 2
+      answer2: Tell me who they are!
+      action2:
+        m_PersistentCalls:
           m_Calls:
           - m_Target: {fileID: 60999377}
             m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
@@ -470,15 +491,6 @@ MonoBehaviour:
               m_StringArgument: Beeps2
               m_BoolArgument: 0
             m_CallState: 2
-    question:
-      answer1: 
-      action1:
-        m_PersistentCalls:
-          m_Calls: []
-      answer2: 
-      action2:
-        m_PersistentCalls:
-          m_Calls: []
       answer3: 
       action3:
         m_PersistentCalls:

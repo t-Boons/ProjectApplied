@@ -5,14 +5,16 @@ public class FadeController : MonoBehaviour
 {
     private Animator anim;
     private bool isFading;
-    private float volume;
-    private float volumeAfterFade;
 
     private AudioSource[] aud;
 
     private void Awake()
     {
         anim = GetComponent<Animator>();
+    }
+
+    private void Start()
+    {
         aud = FindObjectsOfType<AudioSource>();
     }
 
@@ -20,20 +22,14 @@ public class FadeController : MonoBehaviour
     {
         if (isFading)
         {
-            volume = Mathf.Lerp(volume, volumeAfterFade, 6 * Time.deltaTime);
-
             foreach(var a in aud)
-                a.volume = volume;
+                a.volume -= 1 * Time.deltaTime;
         }
     }
 
     public void FadeIn()
     {
         anim.SetTrigger("FadeIn");
-        isFading = true;
-        volume = 0;
-        volumeAfterFade = 1;
-
         StartCoroutine(StopFading());
     }
 
@@ -41,9 +37,6 @@ public class FadeController : MonoBehaviour
     {
         anim.SetTrigger("FadeOut");
         isFading = true;
-        volume = 1;
-        volumeAfterFade = 0;
-
         StartCoroutine(StopFading());
     }
 

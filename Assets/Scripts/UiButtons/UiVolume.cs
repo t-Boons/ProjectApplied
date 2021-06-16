@@ -9,7 +9,7 @@ public class UiVolume : MonoBehaviour
     public Slider voiceSlider;
     public Toggle muteButton;
 
-    private void Start()
+    private void Awake()
     {
         voiceSlider.value = PlayerPrefs.GetFloat("VoiceVolume");
         musicSlider.value = PlayerPrefs.GetFloat("MusicVolume");

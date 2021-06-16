@@ -397,23 +397,11 @@ MonoBehaviour:
       soundType: {fileID: 8300000, guid: ca1789bf4c5166b41877e35a115bbb4d, type: 3}
       text: Alright than.. Ill do it for the queen!
       background: {fileID: 21300000, guid: 0f94d25792ffd8c49933fec2aeb73733, type: 3}
-      leftPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
+      leftPortrait: {fileID: 21300000, guid: 3c1806a555d4ef84089d5801f189137e, type: 3}
       rightPortrait: {fileID: 21300000, guid: 6022947346151fa46955abee36445427, type: 3}
       action:
         m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 245894698}
-            m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-            m_MethodName: EnableFade
-            m_Mode: 6
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 1
-            m_CallState: 2
+          m_Calls: []
     question:
       answer1: 
       action1:
@@ -433,10 +421,22 @@ MonoBehaviour:
       text: Yeah! That's the spirit we like to see!
       background: {fileID: 0}
       leftPortrait: {fileID: 21300000, guid: 6022947346151fa46955abee36445427, type: 3}
-      rightPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
+      rightPortrait: {fileID: 21300000, guid: 3c1806a555d4ef84089d5801f189137e, type: 3}
       action:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 245894698}
+            m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+            m_MethodName: EnableFade
+            m_Mode: 6
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 1
+            m_CallState: 2
     question:
       answer1: 
       action1:
