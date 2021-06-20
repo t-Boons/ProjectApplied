@@ -160,7 +160,7 @@ MonoBehaviour:
       text: You stay at the refugee center, helping where you can whilst keeping
         a close eye on the spy. grandpa was right once again, just before he falls
         you notice some red spots especially his back.
-      background: {fileID: 0}
+      background: {fileID: 21300000, guid: 50ed095159f26444e937a0cfca0c5467, type: 3}
       leftPortrait: {fileID: 0}
       rightPortrait: {fileID: 0}
       action:

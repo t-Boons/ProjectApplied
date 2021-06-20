@@ -333,7 +333,7 @@ MonoBehaviour:
       soundType: {fileID: 8300000, guid: e76f683410bf7494b997f598cb742bf3, type: 3}
       text: There are a lot of families here, children crying because they have lost
         their parents, a food shortage. just a terrible sight to see.
-      background: {fileID: 0}
+      background: {fileID: 21300000, guid: 73a8efcb338cc7e4a981bd168fa878e9, type: 3}
       leftPortrait: {fileID: 0}
       rightPortrait: {fileID: 0}
       action:

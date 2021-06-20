@@ -293,6 +293,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
+--- !u!114 &307748145 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 378038707814064524, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
+  m_PrefabInstance: {fileID: 307748144}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959556395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0442284ce53f35f4c82fffa1cf9a5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &421309445
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,14 +337,315 @@ MonoBehaviour:
   dialogue:
   - component:
       talker: 
-      soundType: {fileID: 0}
-      text: :D
+      soundType: {fileID: 8300000, guid: e76f683410bf7494b997f598cb742bf3, type: 3}
+      text: You point your gun at him
+      background: {fileID: 21300000, guid: 50ed095159f26444e937a0cfca0c5467, type: 3}
+      leftPortrait: {fileID: 0}
+      rightPortrait: {fileID: 0}
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+  - component:
+      talker: '#'
+      soundType: {fileID: 8300000, guid: ca1789bf4c5166b41877e35a115bbb4d, type: 3}
+      text: You either come with me or die here.
+      background: {fileID: 21300000, guid: 50ed095159f26444e937a0cfca0c5467, type: 3}
+      leftPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
+      rightPortrait: {fileID: 0}
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+  - component:
+      talker: Spy
+      soundType: {fileID: 8300000, guid: 348a96e22351da747abe2954e47af24c, type: 3}
+      text: "Haha\u2026 you think you\u2019re slick don\u2019t you."
+      background: {fileID: 0}
+      leftPortrait: {fileID: 21300000, guid: d2705082cb0db6c42940c9c08ee86bae, type: 3}
+      rightPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+  - component:
+      talker: 
+      soundType: {fileID: 8300000, guid: e76f683410bf7494b997f598cb742bf3, type: 3}
+      text: The spy pulls out his gun and points it at you.
+      background: {fileID: 0}
+      leftPortrait: {fileID: 0}
+      rightPortrait: {fileID: 0}
+      action:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 307748145}
+            m_TargetAssemblyTypeName: DialogueSound, Assembly-CSharp
+            m_MethodName: PlaySound
+            m_Mode: 2
+            m_Arguments:
+              m_ObjectArgument: {fileID: 8300000, guid: dd18cff0a2356c340a79d550ddc49a45, type: 3}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+  - component:
+      talker: '#'
+      soundType: {fileID: 8300000, guid: ca1789bf4c5166b41877e35a115bbb4d, type: 3}
+      text: "I don\u2019t want to do this, you can live if you come with me."
+      background: {fileID: 0}
+      leftPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
+      rightPortrait: {fileID: 21300000, guid: d2705082cb0db6c42940c9c08ee86bae, type: 3}
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+  - component:
+      talker: Spy
+      soundType: {fileID: 8300000, guid: 348a96e22351da747abe2954e47af24c, type: 3}
+      text: Well what are you going to do about it?
+      background: {fileID: 0}
+      leftPortrait: {fileID: 21300000, guid: d2705082cb0db6c42940c9c08ee86bae, type: 3}
+      rightPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+  - component:
+      talker: 
+      soundType: {fileID: 8300000, guid: e76f683410bf7494b997f598cb742bf3, type: 3}
+      text: You aim between his eyes.
       background: {fileID: 0}
       leftPortrait: {fileID: 0}
       rightPortrait: {fileID: 0}
       action:
         m_PersistentCalls:
           m_Calls: []
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+  - component:
+      talker: '#'
+      soundType: {fileID: 8300000, guid: ca1789bf4c5166b41877e35a115bbb4d, type: 3}
+      text: Any last words?
+      background: {fileID: 0}
+      leftPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
+      rightPortrait: {fileID: 21300000, guid: d2705082cb0db6c42940c9c08ee86bae, type: 3}
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+  - component:
+      talker: Spy
+      soundType: {fileID: 8300000, guid: 348a96e22351da747abe2954e47af24c, type: 3}
+      text: 3 days...
+      background: {fileID: 0}
+      leftPortrait: {fileID: 21300000, guid: d2705082cb0db6c42940c9c08ee86bae, type: 3}
+      rightPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+  - component:
+      talker: 
+      soundType: {fileID: 0}
+      text: 
+      background: {fileID: 0}
+      leftPortrait: {fileID: 0}
+      rightPortrait: {fileID: 0}
+      action:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 307748145}
+            m_TargetAssemblyTypeName: DialogueSound, Assembly-CSharp
+            m_MethodName: PlaySound
+            m_Mode: 2
+            m_Arguments:
+              m_ObjectArgument: {fileID: 8300000, guid: 8f3c854aa3d214147aff0807e6f98e5c, type: 3}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+  - component:
+      talker: 
+      soundType: {fileID: 8300000, guid: ca1789bf4c5166b41877e35a115bbb4d, type: 3}
+      text: No problems anymore, I better head to LT. Anthony.
+      background: {fileID: 0}
+      leftPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
+      rightPortrait: {fileID: 0}
+      action:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 959556395}
+            m_TargetAssemblyTypeName: 
+            m_MethodName: 
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: 
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+  - component:
+      talker: 
+      soundType: {fileID: 0}
+      text: 
+      background: {fileID: 0}
+      leftPortrait: {fileID: 0}
+      rightPortrait: {fileID: 0}
+      action:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 1687140863}
+            m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+            m_MethodName: LoadScene
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: TakeTheSpy
+              m_BoolArgument: 0
+            m_CallState: 2
     question:
       answer1: 
       action1:
@@ -361,6 +673,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &959556395 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1271571030843672949, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
+  m_PrefabInstance: {fileID: 307748144}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1687140862
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -418,3 +735,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
+--- !u!114 &1687140863 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1088131105050332013, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
+  m_PrefabInstance: {fileID: 1687140862}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 508a2a04ca9301143ac5c30b7014196b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
