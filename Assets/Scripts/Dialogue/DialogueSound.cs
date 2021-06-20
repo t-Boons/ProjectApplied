@@ -29,7 +29,7 @@ public class DialogueSound : MonoBehaviour
 
 
         if(FindObjectOfType<DialogueHolder>())
-            PlayMusic(FindObjectOfType<DialogueHolder>().beginMusic);
+            ReplaceMusic(FindObjectOfType<DialogueHolder>().beginMusic);
     
         if(FindObjectOfType<DialogueHolder>().GetDialogueComponent(0).soundType != null)
             currentSound = FindObjectOfType<DialogueHolder>().GetDialogueComponent(0).soundType;
@@ -87,7 +87,7 @@ public class DialogueSound : MonoBehaviour
         audioSource[1].PlayOneShot(buttonClick);
     }
 
-    private void PlayMusic(AudioClip clip)
+    public void ReplaceMusic(AudioClip clip)
     {
         if (clip == null)
             return;
