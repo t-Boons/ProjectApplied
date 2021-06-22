@@ -108,7 +108,7 @@ EditorBuildSettings:
     path: Assets/Scenes/BadPath/ChargeAhead.unity
     guid: ecded1d012351a84291744ede26cc1b3
   - enabled: 1
-    path: Assets/Scenes/BadEnding.unity
+    path: Assets/Scenes/BadPath/BadEnding.unity
     guid: f27bd67f447160d4c834df5a778c82fa
   - enabled: 1
     path: Assets/Scenes/BadPath/ThousandsOfAnts.unity

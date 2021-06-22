@@ -226,7 +226,7 @@ MonoBehaviour:
       talker: '#'
       soundType: {fileID: 8300000, guid: ca1789bf4c5166b41877e35a115bbb4d, type: 3}
       text: Yeahhhh... i'll just stick to the plan A and take him captive.
-      background: {fileID: 0}
+      background: {fileID: 21300000, guid: 50ed095159f26444e937a0cfca0c5467, type: 3}
       leftPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
       rightPortrait: {fileID: 0}
       action:
