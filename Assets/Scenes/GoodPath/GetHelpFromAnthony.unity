@@ -754,32 +754,9 @@ MonoBehaviour:
         m_PersistentCalls:
           m_Calls: []
   - component:
-      talker: LT. Anthony
-      soundType: {fileID: 8300000, guid: b9048c490c9b60f42a85c42ad53f1a56, type: 3}
-      text: "Good work sir, we\u2019ll handle this further. lets take him in boys!"
-      background: {fileID: 0}
-      leftPortrait: {fileID: 21300000, guid: 6022947346151fa46955abee36445427, type: 3}
-      rightPortrait: {fileID: 21300000, guid: a96c6d2ae848a63469211e437f11cc8d, type: 3}
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-    question:
-      answer1: 
-      action1:
-        m_PersistentCalls:
-          m_Calls: []
-      answer2: 
-      action2:
-        m_PersistentCalls:
-          m_Calls: []
-      answer3: 
-      action3:
-        m_PersistentCalls:
-          m_Calls: []
-  - component:
       talker: 
       soundType: {fileID: 8300000, guid: e76f683410bf7494b997f598cb742bf3, type: 3}
-      text: A team of soldiers carry the spy towards the camp.
+      text: The spy is laying on the floor fully unconcious.
       background: {fileID: 0}
       leftPortrait: {fileID: 0}
       rightPortrait: {fileID: 0}
@@ -802,7 +779,8 @@ MonoBehaviour:
   - component:
       talker: LT. Anthony
       soundType: {fileID: 8300000, guid: b9048c490c9b60f42a85c42ad53f1a56, type: 3}
-      text: And you too #, this will give us an advantage to winning this war.
+      text: Good job sir, And you too #, this will give us an advantage to winning
+        this war.
       background: {fileID: 0}
       leftPortrait: {fileID: 21300000, guid: 6022947346151fa46955abee36445427, type: 3}
       rightPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
@@ -841,7 +819,7 @@ MonoBehaviour:
               m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
               m_IntArgument: 0
               m_FloatArgument: 0
-              m_StringArgument: WhyCantWe
+              m_StringArgument: TakeTheSpy2
               m_BoolArgument: 0
             m_CallState: 2
     question:
