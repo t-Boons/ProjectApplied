@@ -123,7 +123,505 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &214213829
+--- !u!1001 &938171087
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1088131105050332012, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
+      propertyPath: m_Name
+      value: SceneLoader
+      objectReference: {fileID: 0}
+    - target: {fileID: 1088131105050332014, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1088131105050332014, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 503.26007
+      objectReference: {fileID: 0}
+    - target: {fileID: 1088131105050332014, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 184.48022
+      objectReference: {fileID: 0}
+    - target: {fileID: 1088131105050332014, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -104.285965
+      objectReference: {fileID: 0}
+    - target: {fileID: 1088131105050332014, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1088131105050332014, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1088131105050332014, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1088131105050332014, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1088131105050332014, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1088131105050332014, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1088131105050332014, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
+--- !u!114 &938171088 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1088131105050332013, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
+  m_PrefabInstance: {fileID: 938171087}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 508a2a04ca9301143ac5c30b7014196b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &977775212
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 264323739391944461, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 264323739725432124, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1271571032382290257, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
+      propertyPath: m_Name
+      value: DialogueSceneObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 1271571032382290259, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1271571032382290259, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1271571032382290259, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1271571032382290259, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1271571032382290259, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1271571032382290259, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1271571032382290259, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1271571032382290259, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1271571032382290259, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1271571032382290259, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1271571032382290259, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5037383586823252006, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5037383587071004864, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
+--- !u!114 &977775213 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 378038707814064524, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
+  m_PrefabInstance: {fileID: 977775212}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0442284ce53f35f4c82fffa1cf9a5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1227965721
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1227965723}
+  - component: {fileID: 1227965722}
+  m_Layer: 0
+  m_Name: DialogueHolderObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1227965722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227965721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee6f812da5864b449bf3b094b7853d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  beginMusic: {fileID: 8300000, guid: 77e22d4e14b810c43982b73d871f2ca8, type: 3}
+  dialogue:
+  - component:
+      talker: 
+      soundType: {fileID: 8300000, guid: e76f683410bf7494b997f598cb742bf3, type: 3}
+      text: You go home and get some rest.
+      background: {fileID: 21300000, guid: 73a8efcb338cc7e4a981bd168fa878e9, type: 3}
+      leftPortrait: {fileID: 0}
+      rightPortrait: {fileID: 0}
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+  - component:
+      talker: 
+      soundType: {fileID: 0}
+      text: 
+      background: {fileID: 0}
+      leftPortrait: {fileID: 0}
+      rightPortrait: {fileID: 0}
+      action:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 977775213}
+            m_TargetAssemblyTypeName: DialogueSound, Assembly-CSharp
+            m_MethodName: PlaySound
+            m_Mode: 2
+            m_Arguments:
+              m_ObjectArgument: {fileID: 8300000, guid: 23c1bc89557bba64f87c390fba843134, type: 3}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+  - component:
+      talker: LT. Anthony
+      soundType: {fileID: 8300000, guid: b9048c490c9b60f42a85c42ad53f1a56, type: 3}
+      text: Wake up soldier!!!
+      background: {fileID: 0}
+      leftPortrait: {fileID: 21300000, guid: 6022947346151fa46955abee36445427, type: 3}
+      rightPortrait: {fileID: 0}
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+  - component:
+      talker: '#'
+      soundType: {fileID: 8300000, guid: ca1789bf4c5166b41877e35a115bbb4d, type: 3}
+      text: Ughhh... Coming.
+      background: {fileID: 0}
+      leftPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
+      rightPortrait: {fileID: 0}
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+  - component:
+      talker: '#'
+      soundType: {fileID: 8300000, guid: ca1789bf4c5166b41877e35a115bbb4d, type: 3}
+      text: "Couldn\u2019t he just wait 5 more minutes?"
+      background: {fileID: 0}
+      leftPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
+      rightPortrait: {fileID: 21300000, guid: 6022947346151fa46955abee36445427, type: 3}
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+  - component:
+      talker: '#'
+      soundType: {fileID: 8300000, guid: ca1789bf4c5166b41877e35a115bbb4d, type: 3}
+      text: Good morning lieutenant.
+      background: {fileID: 0}
+      leftPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
+      rightPortrait: {fileID: 21300000, guid: 6022947346151fa46955abee36445427, type: 3}
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+  - component:
+      talker: LT. Anthony
+      soundType: {fileID: 8300000, guid: b9048c490c9b60f42a85c42ad53f1a56, type: 3}
+      text: "Good morning, be ready to leave in 5 minutes. we\u2019re leaving early"
+      background: {fileID: 0}
+      leftPortrait: {fileID: 21300000, guid: 6022947346151fa46955abee36445427, type: 3}
+      rightPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+  - component:
+      talker: '#'
+      soundType: {fileID: 8300000, guid: ca1789bf4c5166b41877e35a115bbb4d, type: 3}
+      text: Sir yes sir!
+      background: {fileID: 0}
+      leftPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
+      rightPortrait: {fileID: 21300000, guid: 6022947346151fa46955abee36445427, type: 3}
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+  - component:
+      talker: 
+      soundType: {fileID: 8300000, guid: e76f683410bf7494b997f598cb742bf3, type: 3}
+      text: You rush to get dressed and run outside towards lt. anthony.
+      background: {fileID: 21300000, guid: adbceb272e4d10a47bbedde120803eef, type: 3}
+      leftPortrait: {fileID: 0}
+      rightPortrait: {fileID: 0}
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+  - component:
+      talker: '#'
+      soundType: {fileID: 8300000, guid: ca1789bf4c5166b41877e35a115bbb4d, type: 3}
+      text: Why are we leaving so early?
+      background: {fileID: 0}
+      leftPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
+      rightPortrait: {fileID: 21300000, guid: 6022947346151fa46955abee36445427, type: 3}
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+  - component:
+      talker: LT. Anthony
+      soundType: {fileID: 8300000, guid: b9048c490c9b60f42a85c42ad53f1a56, type: 3}
+      text: "The reds were probably planning to attack us in 3 days, we\u2019re going
+        to take advantage of that by giving them a surprise attack."
+      background: {fileID: 0}
+      leftPortrait: {fileID: 21300000, guid: 6022947346151fa46955abee36445427, type: 3}
+      rightPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+  - component:
+      talker: 
+      soundType: {fileID: 0}
+      text: 
+      background: {fileID: 0}
+      leftPortrait: {fileID: 0}
+      rightPortrait: {fileID: 0}
+      action:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 938171088}
+            m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+            m_MethodName: LoadScene
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: WhyCantWe
+              m_BoolArgument: 0
+            m_CallState: 2
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+--- !u!4 &1227965723
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227965721}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 24.45237, y: 63.69512, z: -22.539398}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1989631036
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -140,7 +638,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7791644560647213499, guid: 28d15e211242545409cc2f16e31b1f3f, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7791644560647213499, guid: 28d15e211242545409cc2f16e31b1f3f, type: 3}
       propertyPath: m_AnchorMax.x
@@ -220,363 +718,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28d15e211242545409cc2f16e31b1f3f, type: 3}
---- !u!1001 &307748144
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 264323739391944461, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 264323739725432124, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1271571032382290257, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
-      propertyPath: m_Name
-      value: DialogueSceneObject
-      objectReference: {fileID: 0}
-    - target: {fileID: 1271571032382290259, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1271571032382290259, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1271571032382290259, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1271571032382290259, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1271571032382290259, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1271571032382290259, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1271571032382290259, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1271571032382290259, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1271571032382290259, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1271571032382290259, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1271571032382290259, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5037383586823252006, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5037383587071004864, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
---- !u!1 &421309445
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 421309447}
-  - component: {fileID: 421309446}
-  m_Layer: 0
-  m_Name: DialogueHolderObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &421309446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 421309445}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee6f812da5864b449bf3b094b7853d84, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  beginMusic: {fileID: 8300000, guid: 6f1096429bb42fb4d8dbbc8391196b5e, type: 3}
-  dialogue:
-  - component:
-      talker: 
-      soundType: {fileID: 8300000, guid: e76f683410bf7494b997f598cb742bf3, type: 3}
-      text: You point your gun at him.
-      background: {fileID: 21300000, guid: 50ed095159f26444e937a0cfca0c5467, type: 3}
-      leftPortrait: {fileID: 0}
-      rightPortrait: {fileID: 0}
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-    question:
-      answer1: 
-      action1:
-        m_PersistentCalls:
-          m_Calls: []
-      answer2: 
-      action2:
-        m_PersistentCalls:
-          m_Calls: []
-      answer3: 
-      action3:
-        m_PersistentCalls:
-          m_Calls: []
-  - component:
-      talker: '#'
-      soundType: {fileID: 8300000, guid: ca1789bf4c5166b41877e35a115bbb4d, type: 3}
-      text: You either come with me or die here.
-      background: {fileID: 0}
-      leftPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
-      rightPortrait: {fileID: 21300000, guid: d2705082cb0db6c42940c9c08ee86bae, type: 3}
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-    question:
-      answer1: 
-      action1:
-        m_PersistentCalls:
-          m_Calls: []
-      answer2: 
-      action2:
-        m_PersistentCalls:
-          m_Calls: []
-      answer3: 
-      action3:
-        m_PersistentCalls:
-          m_Calls: []
-  - component:
-      talker: Spy
-      soundType: {fileID: 8300000, guid: 348a96e22351da747abe2954e47af24c, type: 3}
-      text: "Haha\u2026 you think you\u2019re slick don\u2019t you"
-      background: {fileID: 0}
-      leftPortrait: {fileID: 21300000, guid: d2705082cb0db6c42940c9c08ee86bae, type: 3}
-      rightPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-    question:
-      answer1: 
-      action1:
-        m_PersistentCalls:
-          m_Calls: []
-      answer2: 
-      action2:
-        m_PersistentCalls:
-          m_Calls: []
-      answer3: 
-      action3:
-        m_PersistentCalls:
-          m_Calls: []
-  - component:
-      talker: 
-      soundType: {fileID: 8300000, guid: e76f683410bf7494b997f598cb742bf3, type: 3}
-      text: The spy pulls out his gun and points it at you.
-      background: {fileID: 0}
-      leftPortrait: {fileID: 0}
-      rightPortrait: {fileID: 0}
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-    question:
-      answer1: 
-      action1:
-        m_PersistentCalls:
-          m_Calls: []
-      answer2: 
-      action2:
-        m_PersistentCalls:
-          m_Calls: []
-      answer3: 
-      action3:
-        m_PersistentCalls:
-          m_Calls: []
-  - component:
-      talker: '#'
-      soundType: {fileID: 8300000, guid: ca1789bf4c5166b41877e35a115bbb4d, type: 3}
-      text: "I don\u2019t want to do this, you can live if you come with me."
-      background: {fileID: 0}
-      leftPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
-      rightPortrait: {fileID: 21300000, guid: d2705082cb0db6c42940c9c08ee86bae, type: 3}
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-    question:
-      answer1: 
-      action1:
-        m_PersistentCalls:
-          m_Calls: []
-      answer2: 
-      action2:
-        m_PersistentCalls:
-          m_Calls: []
-      answer3: 
-      action3:
-        m_PersistentCalls:
-          m_Calls: []
-  - component:
-      talker: Spy
-      soundType: {fileID: 8300000, guid: 348a96e22351da747abe2954e47af24c, type: 3}
-      text: Well what are you going to do about it?
-      background: {fileID: 0}
-      leftPortrait: {fileID: 21300000, guid: d2705082cb0db6c42940c9c08ee86bae, type: 3}
-      rightPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-    question:
-      answer1: Shoot his knees
-      action1:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 1687140863}
-            m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-            m_MethodName: LoadScene
-            m_Mode: 5
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: ShootKnees
-              m_BoolArgument: 0
-            m_CallState: 2
-      answer2: Shoot the gun out of his hand
-      action2:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 1687140863}
-            m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-            m_MethodName: LoadScene
-            m_Mode: 5
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: ShootGunOut
-              m_BoolArgument: 0
-            m_CallState: 2
-      answer3: Distract and tackle
-      action3:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 1687140863}
-            m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-            m_MethodName: LoadScene
-            m_Mode: 5
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: DistractTackle
-              m_BoolArgument: 0
-            m_CallState: 2
---- !u!4 &421309447
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 421309445}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.45237, y: 63.69512, z: -22.539398}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1687140862
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1088131105050332012, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
-      propertyPath: m_Name
-      value: SceneLoader
-      objectReference: {fileID: 0}
-    - target: {fileID: 1088131105050332014, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1088131105050332014, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 503.26007
-      objectReference: {fileID: 0}
-    - target: {fileID: 1088131105050332014, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 184.48022
-      objectReference: {fileID: 0}
-    - target: {fileID: 1088131105050332014, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -104.285965
-      objectReference: {fileID: 0}
-    - target: {fileID: 1088131105050332014, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1088131105050332014, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1088131105050332014, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1088131105050332014, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1088131105050332014, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1088131105050332014, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1088131105050332014, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
---- !u!114 &1687140863 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1088131105050332013, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
-  m_PrefabInstance: {fileID: 1687140862}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 508a2a04ca9301143ac5c30b7014196b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

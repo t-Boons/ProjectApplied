@@ -123,7 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &643818624
+--- !u!1 &610924441
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,8 +131,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 643818626}
-  - component: {fileID: 643818625}
+  - component: {fileID: 610924443}
+  - component: {fileID: 610924442}
   m_Layer: 0
   m_Name: DialogueHolderObject
   m_TagString: Untagged
@@ -140,52 +140,26 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &643818625
+--- !u!114 &610924442
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 643818624}
+  m_GameObject: {fileID: 610924441}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ee6f812da5864b449bf3b094b7853d84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beginMusic: {fileID: 8300000, guid: c38b1d95512488d4ab3dc4fb5409f468, type: 3}
+  beginMusic: {fileID: 8300000, guid: 20289302dfb89ee448503c402536c2ed, type: 3}
   dialogue:
   - component:
-      talker: 
-      soundType: {fileID: 8300000, guid: e76f683410bf7494b997f598cb742bf3, type: 3}
-      text: "You go outside looking for lt. anthony, every soldier is getting ready
-        for transport tomorrow. they\u2019re loading vehicles with crates filled
-        with rifles."
-      background: {fileID: 21300000, guid: adbceb272e4d10a47bbedde120803eef, type: 3}
-      leftPortrait: {fileID: 0}
-      rightPortrait: {fileID: 0}
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-    question:
-      answer1: 
-      action1:
-        m_PersistentCalls:
-          m_Calls: []
-      answer2: 
-      action2:
-        m_PersistentCalls:
-          m_Calls: []
-      answer3: 
-      action3:
-        m_PersistentCalls:
-          m_Calls: []
-  - component:
       talker: '#'
       soundType: {fileID: 8300000, guid: ca1789bf4c5166b41877e35a115bbb4d, type: 3}
-      text: "LT. Anthony sir, I have crucial information. I believe there is a spy
-        among us. i\u2019ve located who, should we bring him in for interrogation?"
-      background: {fileID: 0}
-      leftPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
+      text: "Why can\u2019t we just all get along?"
+      background: {fileID: 21300000, guid: b285d03291a154b45aba052787c62ebc, type: 3}
+      leftPortrait: {fileID: 21300000, guid: 3c1806a555d4ef84089d5801f189137e, type: 3}
       rightPortrait: {fileID: 0}
       action:
         m_PersistentCalls:
@@ -206,10 +180,10 @@ MonoBehaviour:
   - component:
       talker: LT. Anthony
       soundType: {fileID: 8300000, guid: b9048c490c9b60f42a85c42ad53f1a56, type: 3}
-      text: Are you 100% sure?
-      background: {fileID: 0}
+      text: "But they\u2019re the enemy!"
+      background: {fileID: 21300000, guid: b285d03291a154b45aba052787c62ebc, type: 3}
       leftPortrait: {fileID: 21300000, guid: 6022947346151fa46955abee36445427, type: 3}
-      rightPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
+      rightPortrait: {fileID: 21300000, guid: 3c1806a555d4ef84089d5801f189137e, type: 3}
       action:
         m_PersistentCalls:
           m_Calls: []
@@ -229,10 +203,11 @@ MonoBehaviour:
   - component:
       talker: '#'
       soundType: {fileID: 8300000, guid: ca1789bf4c5166b41877e35a115bbb4d, type: 3}
-      text: We have to take action fast, he is in the medical area right now and
-        he will be discharged tonight.
+      text: "I know but they\u2019re doing exactly the same as us. those ants you
+        call enemies are just soldiers with orders to take over our base. i suggest
+        we surrender and try to work out something,"
       background: {fileID: 0}
-      leftPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
+      leftPortrait: {fileID: 21300000, guid: 3c1806a555d4ef84089d5801f189137e, type: 3}
       rightPortrait: {fileID: 21300000, guid: 6022947346151fa46955abee36445427, type: 3}
       action:
         m_PersistentCalls:
@@ -253,11 +228,11 @@ MonoBehaviour:
   - component:
       talker: LT. Anthony
       soundType: {fileID: 8300000, guid: b9048c490c9b60f42a85c42ad53f1a56, type: 3}
-      text: "Alright, i\u2019ll have to take you on your word for it. but if you\u2019re
-        suspecting innocent civilians you know you have to leave the colony right?"
+      text: That sounds ridiculous, but we could always try. You are going to lead
+        the surrender though soldier. It was your idea.
       background: {fileID: 0}
       leftPortrait: {fileID: 21300000, guid: 6022947346151fa46955abee36445427, type: 3}
-      rightPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
+      rightPortrait: {fileID: 21300000, guid: 3c1806a555d4ef84089d5801f189137e, type: 3}
       action:
         m_PersistentCalls:
           m_Calls: []
@@ -277,9 +252,114 @@ MonoBehaviour:
   - component:
       talker: '#'
       soundType: {fileID: 8300000, guid: ca1789bf4c5166b41877e35a115bbb4d, type: 3}
-      text: I know and trust me he is a spy.
+      text: Sure sir.
       background: {fileID: 0}
-      leftPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
+      leftPortrait: {fileID: 21300000, guid: 3c1806a555d4ef84089d5801f189137e, type: 3}
+      rightPortrait: {fileID: 21300000, guid: 6022947346151fa46955abee36445427, type: 3}
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+  - component:
+      talker: LT. Anthony
+      soundType: {fileID: 8300000, guid: b9048c490c9b60f42a85c42ad53f1a56, type: 3}
+      text: "Good, get ready to leave boys we\u2019re heading out."
+      background: {fileID: 0}
+      leftPortrait: {fileID: 21300000, guid: 6022947346151fa46955abee36445427, type: 3}
+      rightPortrait: {fileID: 21300000, guid: 3c1806a555d4ef84089d5801f189137e, type: 3}
+      action:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 1389158244}
+            m_TargetAssemblyTypeName: DialogueSound, Assembly-CSharp
+            m_MethodName: ReplaceMusic
+            m_Mode: 2
+            m_Arguments:
+              m_ObjectArgument: {fileID: 8300000, guid: 7d2edd27799394c46bc3a8018e7b1862, type: 3}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+  - component:
+      talker: 
+      soundType: {fileID: 8300000, guid: e76f683410bf7494b997f598cb742bf3, type: 3}
+      text: You enter one of the vehicles towards the battlefield.
+      background: {fileID: 0}
+      leftPortrait: {fileID: 0}
+      rightPortrait: {fileID: 0}
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+  - component:
+      talker: LT. Anthony
+      soundType: {fileID: 8300000, guid: b9048c490c9b60f42a85c42ad53f1a56, type: 3}
+      text: "We\u2019re almost there, if you see the reds coming. immediately hang
+        the white flag."
+      background: {fileID: 0}
+      leftPortrait: {fileID: 21300000, guid: 6022947346151fa46955abee36445427, type: 3}
+      rightPortrait: {fileID: 21300000, guid: 3c1806a555d4ef84089d5801f189137e, type: 3}
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+  - component:
+      talker: '#'
+      soundType: {fileID: 8300000, guid: ca1789bf4c5166b41877e35a115bbb4d, type: 3}
+      text: Got it sir
+      background: {fileID: 0}
+      leftPortrait: {fileID: 21300000, guid: 3c1806a555d4ef84089d5801f189137e, type: 3}
       rightPortrait: {fileID: 21300000, guid: 6022947346151fa46955abee36445427, type: 3}
       action:
         m_PersistentCalls:
@@ -300,7 +380,8 @@ MonoBehaviour:
   - component:
       talker: 
       soundType: {fileID: 8300000, guid: e76f683410bf7494b997f598cb742bf3, type: 3}
-      text: LT. Anthony thinks deeply.
+      text: The vehicles stop everyone exits and takes positions, there is a big
+        hill in front of you
       background: {fileID: 0}
       leftPortrait: {fileID: 0}
       rightPortrait: {fileID: 0}
@@ -321,13 +402,12 @@ MonoBehaviour:
         m_PersistentCalls:
           m_Calls: []
   - component:
-      talker: LT. Anthony
-      soundType: {fileID: 8300000, guid: b9048c490c9b60f42a85c42ad53f1a56, type: 3}
-      text: "Okay i\u2019ve warned you about the consequences, let's hope you\u2019re
-        right."
-      background: {fileID: 0}
-      leftPortrait: {fileID: 21300000, guid: 6022947346151fa46955abee36445427, type: 3}
-      rightPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
+      talker: '#'
+      soundType: {fileID: 8300000, guid: ca1789bf4c5166b41877e35a115bbb4d, type: 3}
+      text: Here goes nothing...
+      background: {fileID: 21300000, guid: 37839673132841b47a813e81fdd28c2c, type: 3}
+      leftPortrait: {fileID: 21300000, guid: 3c1806a555d4ef84089d5801f189137e, type: 3}
+      rightPortrait: {fileID: 0}
       action:
         m_PersistentCalls:
           m_Calls: []
@@ -347,9 +427,33 @@ MonoBehaviour:
   - component:
       talker: 
       soundType: {fileID: 8300000, guid: e76f683410bf7494b997f598cb742bf3, type: 3}
-      text: Later in the medical area.
-      background: {fileID: 21300000, guid: 50ed095159f26444e937a0cfca0c5467, type: 3}
+      text: You walk up the hill. it is calm, you look around for the reds and after
+        a while you can hear marching.
+      background: {fileID: 0}
       leftPortrait: {fileID: 0}
+      rightPortrait: {fileID: 0}
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+  - component:
+      talker: '#'
+      soundType: {fileID: 8300000, guid: ca1789bf4c5166b41877e35a115bbb4d, type: 3}
+      text: I think i see them.
+      background: {fileID: 0}
+      leftPortrait: {fileID: 21300000, guid: 3c1806a555d4ef84089d5801f189137e, type: 3}
       rightPortrait: {fileID: 0}
       action:
         m_PersistentCalls:
@@ -370,10 +474,175 @@ MonoBehaviour:
   - component:
       talker: LT. Anthony
       soundType: {fileID: 8300000, guid: b9048c490c9b60f42a85c42ad53f1a56, type: 3}
-      text: Tell me where he is.
+      text: "Start waving the flag boy and don\u2019t stop until one of them starts
+        shooting or walking. hold your fire boys!"
       background: {fileID: 0}
       leftPortrait: {fileID: 21300000, guid: 6022947346151fa46955abee36445427, type: 3}
-      rightPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
+      rightPortrait: {fileID: 0}
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+  - component:
+      talker: 
+      soundType: {fileID: 8300000, guid: e76f683410bf7494b997f598cb742bf3, type: 3}
+      text: The reds start getting closer and closer. they eventually stop and someone
+        comes out.
+      background: {fileID: 0}
+      leftPortrait: {fileID: 0}
+      rightPortrait: {fileID: 0}
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+  - component:
+      talker: Enemy Soldier
+      soundType: {fileID: 8300000, guid: 2d0125d0bbf2133438673c1f76ec1e68, type: 3}
+      text: "You\u2019re surrendering?"
+      background: {fileID: 0}
+      leftPortrait: {fileID: 21300000, guid: fc98108f85d702246bf936046d1ed8eb, type: 3}
+      rightPortrait: {fileID: 21300000, guid: 3c1806a555d4ef84089d5801f189137e, type: 3}
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+  - component:
+      talker: '#'
+      soundType: {fileID: 8300000, guid: ca1789bf4c5166b41877e35a115bbb4d, type: 3}
+      text: "Yes, we\u2019re trying to make peace with you guys!"
+      background: {fileID: 0}
+      leftPortrait: {fileID: 21300000, guid: 3c1806a555d4ef84089d5801f189137e, type: 3}
+      rightPortrait: {fileID: 21300000, guid: fc98108f85d702246bf936046d1ed8eb, type: 3}
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+  - component:
+      talker: 
+      soundType: {fileID: 8300000, guid: e76f683410bf7494b997f598cb742bf3, type: 3}
+      text: Another ant steps out, looking likeLT. Anthony,. LT. Anthony steps forward
+        as well.
+      background: {fileID: 0}
+      leftPortrait: {fileID: 0}
+      rightPortrait: {fileID: 0}
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+  - component:
+      talker: Enemy LT.
+      soundType: {fileID: 8300000, guid: e76f683410bf7494b997f598cb742bf3, type: 3}
+      text: Hmm...
+      background: {fileID: 0}
+      leftPortrait: {fileID: 21300000, guid: fc98108f85d702246bf936046d1ed8eb, type: 3}
+      rightPortrait: {fileID: 21300000, guid: 6022947346151fa46955abee36445427, type: 3}
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+  - component:
+      talker: LT. Anthony
+      soundType: {fileID: 8300000, guid: b9048c490c9b60f42a85c42ad53f1a56, type: 3}
+      text: Hmm...
+      background: {fileID: 0}
+      leftPortrait: {fileID: 21300000, guid: 6022947346151fa46955abee36445427, type: 3}
+      rightPortrait: {fileID: 21300000, guid: fc98108f85d702246bf936046d1ed8eb, type: 3}
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+    question:
+      answer1: 
+      action1:
+        m_PersistentCalls:
+          m_Calls: []
+      answer2: 
+      action2:
+        m_PersistentCalls:
+          m_Calls: []
+      answer3: 
+      action3:
+        m_PersistentCalls:
+          m_Calls: []
+  - component:
+      talker: 
+      soundType: {fileID: 8300000, guid: e76f683410bf7494b997f598cb742bf3, type: 3}
+      text: They switch nasty looks but shake hands, both armies cheering that the
+        war is over.
+      background: {fileID: 0}
+      leftPortrait: {fileID: 0}
+      rightPortrait: {fileID: 0}
       action:
         m_PersistentCalls:
           m_Calls: []
@@ -400,439 +669,7 @@ MonoBehaviour:
       action:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 1552787707}
-            m_TargetAssemblyTypeName: DialogueSound, Assembly-CSharp
-            m_MethodName: PlaySound
-            m_Mode: 2
-            m_Arguments:
-              m_ObjectArgument: {fileID: 8300000, guid: 34ca76cb1d59de2419de43faaee52140, type: 3}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-    question:
-      answer1: 
-      action1:
-        m_PersistentCalls:
-          m_Calls: []
-      answer2: 
-      action2:
-        m_PersistentCalls:
-          m_Calls: []
-      answer3: 
-      action3:
-        m_PersistentCalls:
-          m_Calls: []
-  - component:
-      talker: '#'
-      soundType: {fileID: 8300000, guid: ca1789bf4c5166b41877e35a115bbb4d, type: 3}
-      text: That's him!
-      background: {fileID: 0}
-      leftPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
-      rightPortrait: {fileID: 0}
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-    question:
-      answer1: 
-      action1:
-        m_PersistentCalls:
-          m_Calls: []
-      answer2: 
-      action2:
-        m_PersistentCalls:
-          m_Calls: []
-      answer3: 
-      action3:
-        m_PersistentCalls:
-          m_Calls: []
-  - component:
-      talker: 
-      soundType: {fileID: 8300000, guid: e76f683410bf7494b997f598cb742bf3, type: 3}
-      text: You walk towards the sound seeing an ant that dropped on the floor squirming
-        around as if he is trying to get dirty.
-      background: {fileID: 0}
-      leftPortrait: {fileID: 0}
-      rightPortrait: {fileID: 0}
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-    question:
-      answer1: 
-      action1:
-        m_PersistentCalls:
-          m_Calls: []
-      answer2: 
-      action2:
-        m_PersistentCalls:
-          m_Calls: []
-      answer3: 
-      action3:
-        m_PersistentCalls:
-          m_Calls: []
-  - component:
-      talker: LT. Anthony
-      soundType: {fileID: 8300000, guid: b9048c490c9b60f42a85c42ad53f1a56, type: 3}
-      text: Hey there, we have to speak to you in private. the sooner you co-operate
-        the sooner we can go home.
-      background: {fileID: 0}
-      leftPortrait: {fileID: 21300000, guid: 6022947346151fa46955abee36445427, type: 3}
-      rightPortrait: {fileID: 21300000, guid: d2705082cb0db6c42940c9c08ee86bae, type: 3}
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-    question:
-      answer1: 
-      action1:
-        m_PersistentCalls:
-          m_Calls: []
-      answer2: 
-      action2:
-        m_PersistentCalls:
-          m_Calls: []
-      answer3: 
-      action3:
-        m_PersistentCalls:
-          m_Calls: []
-  - component:
-      talker: Spy
-      soundType: {fileID: 8300000, guid: 348a96e22351da747abe2954e47af24c, type: 3}
-      text: "U..u..uh i\u2019m sorry i think you have the wrong guy i have nothing
-        of any worth to you heh..."
-      background: {fileID: 0}
-      leftPortrait: {fileID: 21300000, guid: d2705082cb0db6c42940c9c08ee86bae, type: 3}
-      rightPortrait: {fileID: 21300000, guid: 6022947346151fa46955abee36445427, type: 3}
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-    question:
-      answer1: 
-      action1:
-        m_PersistentCalls:
-          m_Calls: []
-      answer2: 
-      action2:
-        m_PersistentCalls:
-          m_Calls: []
-      answer3: 
-      action3:
-        m_PersistentCalls:
-          m_Calls: []
-  - component:
-      talker: LT. Anthony
-      soundType: {fileID: 8300000, guid: b9048c490c9b60f42a85c42ad53f1a56, type: 3}
-      text: Just come with us sir we just want to ask you a couple of questions.
-      background: {fileID: 0}
-      leftPortrait: {fileID: 21300000, guid: 6022947346151fa46955abee36445427, type: 3}
-      rightPortrait: {fileID: 21300000, guid: d2705082cb0db6c42940c9c08ee86bae, type: 3}
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-    question:
-      answer1: 
-      action1:
-        m_PersistentCalls:
-          m_Calls: []
-      answer2: 
-      action2:
-        m_PersistentCalls:
-          m_Calls: []
-      answer3: 
-      action3:
-        m_PersistentCalls:
-          m_Calls: []
-  - component:
-      talker: 
-      soundType: {fileID: 8300000, guid: e76f683410bf7494b997f598cb742bf3, type: 3}
-      text: The ant starts to nervously twitch and looks around for an escape, you
-        turn around and he grabs you holding a gun against your head.
-      background: {fileID: 0}
-      leftPortrait: {fileID: 0}
-      rightPortrait: {fileID: 0}
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-    question:
-      answer1: 
-      action1:
-        m_PersistentCalls:
-          m_Calls: []
-      answer2: 
-      action2:
-        m_PersistentCalls:
-          m_Calls: []
-      answer3: 
-      action3:
-        m_PersistentCalls:
-          m_Calls: []
-  - component:
-      talker: Spy
-      soundType: {fileID: 8300000, guid: 348a96e22351da747abe2954e47af24c, type: 3}
-      text: "Stop right there! i\u2019m not afraid to shoot him!"
-      background: {fileID: 0}
-      leftPortrait: {fileID: 21300000, guid: d2705082cb0db6c42940c9c08ee86bae, type: 3}
-      rightPortrait: {fileID: 21300000, guid: 6022947346151fa46955abee36445427, type: 3}
-      action:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 1552787707}
-            m_TargetAssemblyTypeName: DialogueSound, Assembly-CSharp
-            m_MethodName: ReplaceMusic
-            m_Mode: 2
-            m_Arguments:
-              m_ObjectArgument: {fileID: 8300000, guid: 35ad2b207a7d8ad4c8979dd8f6e38a82, type: 3}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-    question:
-      answer1: 
-      action1:
-        m_PersistentCalls:
-          m_Calls: []
-      answer2: 
-      action2:
-        m_PersistentCalls:
-          m_Calls: []
-      answer3: 
-      action3:
-        m_PersistentCalls:
-          m_Calls: []
-  - component:
-      talker: LT. Anthony
-      soundType: {fileID: 8300000, guid: b9048c490c9b60f42a85c42ad53f1a56, type: 3}
-      text: '#!'
-      background: {fileID: 0}
-      leftPortrait: {fileID: 21300000, guid: 6022947346151fa46955abee36445427, type: 3}
-      rightPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-    question:
-      answer1: 
-      action1:
-        m_PersistentCalls:
-          m_Calls: []
-      answer2: 
-      action2:
-        m_PersistentCalls:
-          m_Calls: []
-      answer3: 
-      action3:
-        m_PersistentCalls:
-          m_Calls: []
-  - component:
-      talker: Spy
-      soundType: {fileID: 8300000, guid: 348a96e22351da747abe2954e47af24c, type: 3}
-      text: Glory to the reds and our que-
-      background: {fileID: 0}
-      leftPortrait: {fileID: 21300000, guid: d2705082cb0db6c42940c9c08ee86bae, type: 3}
-      rightPortrait: {fileID: 0}
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-    question:
-      answer1: 
-      action1:
-        m_PersistentCalls:
-          m_Calls: []
-      answer2: 
-      action2:
-        m_PersistentCalls:
-          m_Calls: []
-      answer3: 
-      action3:
-        m_PersistentCalls:
-          m_Calls: []
-  - component:
-      talker: 
-      soundType: {fileID: 0}
-      text: 
-      background: {fileID: 0}
-      leftPortrait: {fileID: 0}
-      rightPortrait: {fileID: 0}
-      action:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 1552787707}
-            m_TargetAssemblyTypeName: DialogueSound, Assembly-CSharp
-            m_MethodName: PlaySound
-            m_Mode: 2
-            m_Arguments:
-              m_ObjectArgument: {fileID: 8300000, guid: 4c6b2e1d60cd2f44b9dba65cbd222380, type: 3}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-    question:
-      answer1: 
-      action1:
-        m_PersistentCalls:
-          m_Calls: []
-      answer2: 
-      action2:
-        m_PersistentCalls:
-          m_Calls: []
-      answer3: 
-      action3:
-        m_PersistentCalls:
-          m_Calls: []
-  - component:
-      talker: 
-      soundType: {fileID: 8300000, guid: e76f683410bf7494b997f598cb742bf3, type: 3}
-      text: The spy falls to the floor, the bonk on his head left a red mark.
-      background: {fileID: 0}
-      leftPortrait: {fileID: 0}
-      rightPortrait: {fileID: 0}
-      action:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 1552787707}
-            m_TargetAssemblyTypeName: DialogueSound, Assembly-CSharp
-            m_MethodName: ReplaceMusic
-            m_Mode: 2
-            m_Arguments:
-              m_ObjectArgument: {fileID: 8300000, guid: 20289302dfb89ee448503c402536c2ed, type: 3}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-    question:
-      answer1: 
-      action1:
-        m_PersistentCalls:
-          m_Calls: []
-      answer2: 
-      action2:
-        m_PersistentCalls:
-          m_Calls: []
-      answer3: 
-      action3:
-        m_PersistentCalls:
-          m_Calls: []
-  - component:
-      talker: Grandpa
-      soundType: {fileID: 8300000, guid: 82189e24a3a0b854ebd3b3334f1fd8d3, type: 3}
-      text: Heheh, still got it.
-      background: {fileID: 0}
-      leftPortrait: {fileID: 21300000, guid: a96c6d2ae848a63469211e437f11cc8d, type: 3}
-      rightPortrait: {fileID: 0}
-      action:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 1552787707}
-            m_TargetAssemblyTypeName: DialogueSound, Assembly-CSharp
-            m_MethodName: ReplaceMusic
-            m_Mode: 2
-            m_Arguments:
-              m_ObjectArgument: {fileID: 8300000, guid: 08fe87c9594d7634ba96b2ca47946242, type: 3}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-    question:
-      answer1: 
-      action1:
-        m_PersistentCalls:
-          m_Calls: []
-      answer2: 
-      action2:
-        m_PersistentCalls:
-          m_Calls: []
-      answer3: 
-      action3:
-        m_PersistentCalls:
-          m_Calls: []
-  - component:
-      talker: LT. Anthony
-      soundType: {fileID: 8300000, guid: b9048c490c9b60f42a85c42ad53f1a56, type: 3}
-      text: "Good work sir, we\u2019ll handle this further. lets take him in boys!"
-      background: {fileID: 0}
-      leftPortrait: {fileID: 21300000, guid: 6022947346151fa46955abee36445427, type: 3}
-      rightPortrait: {fileID: 21300000, guid: a96c6d2ae848a63469211e437f11cc8d, type: 3}
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-    question:
-      answer1: 
-      action1:
-        m_PersistentCalls:
-          m_Calls: []
-      answer2: 
-      action2:
-        m_PersistentCalls:
-          m_Calls: []
-      answer3: 
-      action3:
-        m_PersistentCalls:
-          m_Calls: []
-  - component:
-      talker: 
-      soundType: {fileID: 8300000, guid: e76f683410bf7494b997f598cb742bf3, type: 3}
-      text: A team of soldiers carry the spy towards the camp.
-      background: {fileID: 0}
-      leftPortrait: {fileID: 0}
-      rightPortrait: {fileID: 0}
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-    question:
-      answer1: 
-      action1:
-        m_PersistentCalls:
-          m_Calls: []
-      answer2: 
-      action2:
-        m_PersistentCalls:
-          m_Calls: []
-      answer3: 
-      action3:
-        m_PersistentCalls:
-          m_Calls: []
-  - component:
-      talker: LT. Anthony
-      soundType: {fileID: 8300000, guid: b9048c490c9b60f42a85c42ad53f1a56, type: 3}
-      text: And you too #, this will give us an advantage to winning this war.
-      background: {fileID: 0}
-      leftPortrait: {fileID: 21300000, guid: 6022947346151fa46955abee36445427, type: 3}
-      rightPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-    question:
-      answer1: 
-      action1:
-        m_PersistentCalls:
-          m_Calls: []
-      answer2: 
-      action2:
-        m_PersistentCalls:
-          m_Calls: []
-      answer3: 
-      action3:
-        m_PersistentCalls:
-          m_Calls: []
-  - component:
-      talker: 
-      soundType: {fileID: 0}
-      text: 
-      background: {fileID: 0}
-      leftPortrait: {fileID: 0}
-      rightPortrait: {fileID: 0}
-      action:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 1956002299}
+          - m_Target: {fileID: 986798727}
             m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
             m_MethodName: LoadScene
             m_Mode: 5
@@ -841,7 +678,7 @@ MonoBehaviour:
               m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
               m_IntArgument: 0
               m_FloatArgument: 0
-              m_StringArgument: WhyCantWe
+              m_StringArgument: Surrendered
               m_BoolArgument: 0
             m_CallState: 2
     question:
@@ -857,13 +694,13 @@ MonoBehaviour:
       action3:
         m_PersistentCalls:
           m_Calls: []
---- !u!4 &643818626
+--- !u!4 &610924443
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 643818624}
+  m_GameObject: {fileID: 610924441}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 24.45237, y: 63.69512, z: -22.539398}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -871,7 +708,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1344007048
+--- !u!114 &986798727 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1088131105050332013, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
+  m_PrefabInstance: {fileID: 1974724881}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 508a2a04ca9301143ac5c30b7014196b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &1056016704
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -888,7 +736,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7791644560647213499, guid: 28d15e211242545409cc2f16e31b1f3f, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7791644560647213499, guid: 28d15e211242545409cc2f16e31b1f3f, type: 3}
       propertyPath: m_AnchorMax.x
@@ -968,7 +816,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28d15e211242545409cc2f16e31b1f3f, type: 3}
---- !u!1001 &1552787706
+--- !u!114 &1389158244 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 378038707814064524, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
+  m_PrefabInstance: {fileID: 1414433616}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0442284ce53f35f4c82fffa1cf9a5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &1414433616
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -993,7 +852,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1271571032382290259, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1271571032382290259, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1045,18 +904,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
---- !u!114 &1552787707 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 378038707814064524, guid: 6a9ef9072f39b704eae4db90418ef224, type: 3}
-  m_PrefabInstance: {fileID: 1552787706}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0442284ce53f35f4c82fffa1cf9a5151, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1001 &1956002298
+--- !u!1001 &1974724881
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1069,7 +917,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1088131105050332014, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1088131105050332014, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1113,14 +961,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
---- !u!114 &1956002299 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1088131105050332013, guid: 6fbb411445e402a44b0054d2b597b117, type: 3}
-  m_PrefabInstance: {fileID: 1956002298}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 508a2a04ca9301143ac5c30b7014196b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
