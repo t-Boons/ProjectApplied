@@ -6,6 +6,10 @@ public class TitleScreenVolume : MonoBehaviour
 
     private void Start()
     {
+        if (PlayerPrefs.GetFloat("MusicVolume") == 0)
+            PlayerPrefs.SetFloat("MusicVolume", 1);
+
+        ChangeVolume();
         FindObjectOfType<UiVolume>().OnChangedSoundValues += ChangeVolume;
     }
 
