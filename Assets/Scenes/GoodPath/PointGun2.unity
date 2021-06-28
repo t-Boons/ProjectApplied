@@ -327,7 +327,7 @@ MonoBehaviour:
   - component:
       talker: 
       soundType: {fileID: 8300000, guid: e76f683410bf7494b997f598cb742bf3, type: 3}
-      text: You point your gun at him.
+      text: You follow him and point your gun at him.
       background: {fileID: 21300000, guid: 50ed095159f26444e937a0cfca0c5467, type: 3}
       leftPortrait: {fileID: 0}
       rightPortrait: {fileID: 0}
@@ -373,7 +373,7 @@ MonoBehaviour:
   - component:
       talker: Spy
       soundType: {fileID: 8300000, guid: 348a96e22351da747abe2954e47af24c, type: 3}
-      text: "Haha\u2026 you think you\u2019re slick don\u2019t you"
+      text: "Haha\u2026 you think you\u2019re slick don\u2019t you."
       background: {fileID: 0}
       leftPortrait: {fileID: 21300000, guid: d2705082cb0db6c42940c9c08ee86bae, type: 3}
       rightPortrait: {fileID: 21300000, guid: 2ff1d2498fd761d4ca2bdc3c9cb42ed9, type: 3}
